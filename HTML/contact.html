@@ -51,7 +51,78 @@
                 Email : moravat763@gmail.com <br>
                 If you would like to leave feedback for the website you can do so below: 
             </p>
-            
+        </div>
+        <div class="box long" id="forms">
+            <form action="mailto:moravat763@gmail.com" method="post" enctype="text/plain">
+                <fieldset class="form one">
+                    <legend>Positive Feedback</legend>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" placeholder="Your name" required> <br> <br>
+
+                    <label for="email">Email address: </label>
+                    <input type="email" id="email" name="email" placeholder="youremail@email.com"><br> <br>
+
+                    Are you a... <br>
+
+                    <input type="radio" name="delivery" id="am" value="am">
+	                <label for="am">Student</label> <br>
+                    <input type="radio" name="delivery" id="pm" value="pm">
+                    <label for="pm">Employer</label> <br>
+                    <input type="radio" name="delivery" id="eve" value="eve">
+                    <label for="eve">Other</label> <br> <br>
+
+                    
+                    <label for="volume">Rating for website: </label>
+                    <input type="range" id="volume" name="volume" min="0" max="10" step="1" value="3" style="width: 230px;"><br> <br>
+
+                    <label for="speed">Speed: </label>
+                    <input type="range" id="speed" name="speed" min="0" max="10" step="1" value="3" style="width: 230px;"><br> <br>
+
+                    <label for="Quality">Quality of information available: </label>
+                    <input type="range" id="Quality" name="Quality" min="0" max="10" step="1" value="3" style="width: 230px;"><br> <br>
+                    
+                    <label for="extraP">Extra Comments:</label>
+                    <textarea name="extraP" id="extraP" cols="70" rows="7"></textarea>
+                    <input type="submit" value="Submit" class="buttons" style="margin-right: 350px;">
+                    <input type="reset" value="Reset" class="buttons">
+                </fieldset>
+                <fieldset class="form two">
+                    <legend>Improvements</legend>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" placeholder="Your name" required> <br> <br>
+
+                    <label for="email">Email address: </label>
+                    <input type="email" id="email" name="email" placeholder="youremail@email.com"><br> <br>
+
+                    Are you a... <br>
+
+                    <input type="radio" name="delivery" id="am" value="am">
+	                <label for="am">Student</label> <br>
+                    <input type="radio" name="delivery" id="pm" value="pm">
+                    <label for="pm">Employer</label> <br>
+                    <input type="radio" name="delivery" id="eve" value="eve">
+                    <label for="eve">Other</label> <br> <br>
+                    
+                    Tick which pages you think need improvement: <br>
+                    <input type="checkbox" name="drink" id="Home" 
+                    value="Home" checked>
+                    <label for="Home">Home</label> <br>
+                    <input type="checkbox" name="drink" id="About_Me" 
+                    value="About_Me">
+                    <label for="About_Me">About Me</label> <br>
+                    <input type="checkbox" name="drink" id="Project" 
+                    value="Project">
+                    <label for="Project">Project</label> <br>
+                    <input type="checkbox" name="drink" id="Contact" value="Contact me">
+                    <label for="Contact">Contact me</label> <br> <br>
+
+
+                    <label for="extraP">Extra Comments:</label>
+                    <textarea name="extraP" id="extraP" cols="70" rows="7"></textarea>
+                    <input type="submit" value="Submit" class="buttons" style="margin-right: 350px;">
+                    <input type="reset" value="Reset" class="buttons">
+                </fieldset>
+            </form>
         </div>
     </div>
     <footer id="footer"><a href="/HTML/contact.html">Contact Me: <span class="material-symbols-outlined" style="transform: scale(1.5); margin-left: 5px;">contact_mail</span></a></footer>

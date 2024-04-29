@@ -60,5 +60,7 @@ function load(){
     setTimeout(function(){document.getElementById("projects").style.left="0";}, 1000);
     setTimeout(function(){document.getElementById("resume").style.visibility="visible";}, 700);
     setTimeout(function(){document.getElementById("resume").style.left="0";}, 700);
+    setTimeout(function(){document.getElementById("forms").style.visibility="visible";}, 700);
+    setTimeout(function(){document.getElementById("forms").style.left="0";}, 700);
 }
 

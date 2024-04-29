@@ -5,12 +5,12 @@ body{
     color: rgb(0, 0, 0);
 }
 
-#topbox, #navbar, #projects, #aboutme, #resume {
+#topbox, #navbar, #projects, #aboutme, #resume, #forms {
   visibility: hidden;
   position: relative;
   transition: left 0.5s ease; 
 }
-#topbox, #aboutme, #projects, #resume {
+#topbox, #aboutme, #projects, #resume,  #forms {
   left: -100%; 
 }
 .title{
@@ -74,7 +74,7 @@ a#active {
   color: black;
 }
 .box{
-    height: 300px;
+  max-height: 300px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -85,6 +85,10 @@ a#active {
     padding-bottom: 50px;
     overflow: hidden;
     border-bottom: 2px solid grey;
+}
+div.long{
+  max-height: 800px;
+  height: 800px;
 }
 .boximg{
   height: 300px;
@@ -167,5 +171,35 @@ div.section{
   height: 200px;
   overflow-x: hidden;
 }
+fieldset{
+  width: 500px;
+  height: 800px;
+  background-color: #4bc497;
+  color: rgb(118, 10, 135);
+  font-weight: bold;
+  font-size: 1.4vw;
+}
+label, input{
+  font-size: 1.4vw;
+  margin: 10px 0px 10px 0px;
+}
+fieldset.one{
+  float: left;
+}
+fieldset.two{
+  float: right;
+}
+legend{
+  background-color: antiquewhite;
+  color: blueviolet;
+  font-size: large;
+}
+.buttons{
+  background-color: brown;
+  color: cadetblue;
+  font-size: larger;
+}
+
+
 
 

@@ -74,7 +74,26 @@
             </h3>
         </div>
     </div>
-    <footer id="footer"><a href="/HTML/contact.html">Contact Me: <span class="material-symbols-outlined" style="transform: scale(1.5); margin-left: 5px;">contact_mail</span></a></footer>
+    <footer id="footer">
+        <a href="/HTML/contact.html">Contact Me: 
+            <span class="material-symbols-outlined" style="transform: scale(1.5); margin-left: 5px;">contact_mail
+            </span>
+        </a>
+        <label for="cursors" style="position: fixed; bottom: 0; right: 0;" class="cursor">
+                <select name="cursor" id="cursors" onchange="cursorChange()" class="cursor">
+                    <option value="default">Default</option>
+                    <option value="bluesaber">BlueSaber</option>
+                    <option value="redsaber">RedSaber</option>
+                    <option value="Fist">Electric Fist</option>
+                    <option value="Pointer">Pointer</option>
+                    <option value="RedHand">Red Hand</option>
+                    <option value="whitec">White car</option>
+                    <option value="redc">Red Car</option>
+                    <option value="purplec">Purple Car</option>
+                    <option value="gun">Gun</option>
+                </select>
+        </label>
+    </footer>
     <script src="/JS/logic.js"></script>
 </body>
 </html>

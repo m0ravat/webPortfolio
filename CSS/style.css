@@ -3,6 +3,8 @@ body{
     background-image:url('/Media/whitebg.png');
     background-size: cover;
     color: rgb(0, 0, 0);
+    cursor: auto;
+    
 }
 
 #topbox, #navbar, #projects, #aboutme, #resume, #forms {
@@ -30,6 +32,7 @@ body{
 }
 .material-symbols-outlined{
   transform: scale(2);
+  padding-bottom: 5px;
 }
 span.padd{
   padding: 5px 15px 5px 10px;
@@ -123,6 +126,10 @@ footer{
 }
 footer:hover{
   opacity: 1.0;
+}
+.cursor{
+  margin: 0 0 0 0;
+  font-size: large;
 }
 
 .resume{

@@ -31,39 +31,18 @@ function menuclick() {
 function darkclick(){
     if (dcount % 2 == 1){
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor="#34eba8";
             document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
             document.body.style.color="#34eba8";
-            darkmode.style.backgroundColor="#34eba8";
-            menu.style.backgroundColor="#34eba8";
         }
-        document.getElementById("active").style.backgroundColor="white";
     }else{
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor="white";
             document.body.style.backgroundImage="url('/Media/whitebg.png')";
             document.body.style.color="black";
-            darkmode.style.backgroundColor="white";
-            menu.style.backgroundColor="white";
         }
-        document.getElementById("active").style.backgroundColor="#4bc497";
     }
     dcount++;
 }
-function load(){
-    setTimeout(function(){document.getElementById("topbox").style.visibility="visible";}, 200);
-    setTimeout(function(){document.getElementById("topbox").style.left="0";}, 200);
-    setTimeout(function(){document.getElementById("navbar").style.visibility="visible";}, 100);
-    setTimeout(function(){document.getElementById("footer").style.visibility="visible";}, 100);
-    setTimeout(function(){document.getElementById("aboutme").style.visibility="visible";}, 700);
-    setTimeout(function(){document.getElementById("aboutme").style.left="0";}, 700);
-    setTimeout(function(){document.getElementById("projects").style.visibility="visible";}, 1000);
-    setTimeout(function(){document.getElementById("projects").style.left="0";}, 1000);
-    setTimeout(function(){document.getElementById("resume").style.visibility="visible";}, 700);
-    setTimeout(function(){document.getElementById("resume").style.left="0";}, 700);
-    setTimeout(function(){document.getElementById("forms").style.visibility="visible";}, 700);
-    setTimeout(function(){document.getElementById("forms").style.left="0";}, 700);
-}
+
 function cursorChange(){
     let index = document.getElementById("cursors").selectedIndex;
     switch(index){

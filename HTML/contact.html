@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
-<body>
+<body style="visibility: hidden;" onload="load()">
     <div class="topnav" id="navbar">
         <div class="topnav-left">
             <a href="/index.html" class="button">
@@ -29,18 +29,19 @@
                 <span class="material-symbols-outlined">contact_mail</span>
                 <span class="icon-text">Contact Me</span>
             </a> 
+            <h1 style="float: left;" class="navTitle">Contact Me Page</h1>
         </div>
         <div class="topnav-right">
+            <button class="button" id="menubutton">
+                <span class="material-symbols-outlined" onclick="menuclick()">menu</span>
+                <span class="icon-text">Hide/Show Menu</span>
+            </button>       
             <button class="button" id="darkmode" onclick="darkclick()">
                 <span class="material-symbols-outlined">contrast</span>
                 <span class="icon-text">Light/Dark Mode</span>
             </button> 
-            <button class="button" id="menubutton" onclick="menuclick()">
-                <span class="material-symbols-outlined">menu</span>
-                <span class="icon-text">Hide/Show Menu</span>
-            </button>       
         </div>
-    </div>    
+    </div> 
     <div id="content">
         <div class="box top" id="topbox">
             <h1>Contact Details</h1>
@@ -51,7 +52,7 @@
                 If you would like to leave feedback for the website you can do so below: 
             </p>
         </div>
-        <div class="box long" id="forms">
+        <div class="box long" id="content">
             <form action="mailto:moravat763@gmail.com" method="post" enctype="text/plain">
                 <fieldset class="form one">
                     <legend>Positive Feedback</legend>

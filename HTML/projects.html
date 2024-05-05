@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <script defer src="/JS/logic.js"></script>
 </head>
-<body>
+<body style="visibility: hidden;" onload="load()">
     <div class="topnav" id="navbar">
         <div class="topnav-left">
             <a href="/index.html" class="button">
@@ -30,16 +30,17 @@
                 <span class="material-symbols-outlined">contact_mail</span>
                 <span class="icon-text">Contact Me</span>
             </a> 
+            <h1 style="float: left;" class="navTitle">Projects Page</h1>
         </div>
         <div class="topnav-right">
+            <button class="button" id="menubutton">
+                <span class="material-symbols-outlined" onclick="menuclick()">menu</span>
+                <span class="icon-text">Hide/Show Menu</span>
+            </button>       
             <button class="button" id="darkmode" onclick="darkclick()">
                 <span class="material-symbols-outlined">contrast</span>
                 <span class="icon-text">Light/Dark Mode</span>
             </button> 
-            <button class="button" id="menubutton" onclick="menuclick()">
-                <span class="material-symbols-outlined">menu</span>
-                <span class="icon-text">Hide/Show Menu</span>
-            </button>      
         </div>
     </div>
     <div id="content">

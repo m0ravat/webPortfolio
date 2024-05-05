@@ -10,20 +10,23 @@ var user = document.getElementById("userpImg");
 var active = document.getElementById("active");
 var topbox = document.getElementById("topbox");
 var cursor = document.getElementById("cursors");
+var title = document.getElementById("navTitle")
 
 function menuclick() {
     if (count % 2 == 1) {
-        for (var i = 0; i < buttons.length; i++) {
+        for (var i = 0; i < 4; i++) {
             buttons[i].style.opacity = "0";
             footer.style.opacity="0";
             darkmode.style.opacity="0";
         }
+        navbar.style.opacity="0.5";
     }else{
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].style.opacity = "1";
             footer.style.opacity="1";
             darkmode.style.opacity="1";
         }
+        navbar.style.opacity="1";
     }
     count++;
 }
@@ -39,10 +42,29 @@ function darkclick(){
             document.body.style.backgroundImage="url('/Media/whitebg.png')";
             document.body.style.color="black";
         }
+        document.getElementById("active").style.backgroundColor="#4bc497";
     }
     dcount++;
 }
+function load(){
+    setTimeout(function(){document.getElementById("topbox").style.visibility="visible";}, 400);
+    setTimeout(function(){document.getElementById("topbox").style.left="0";}, 400);
+    setTimeout(function(){document.getElementById("navbar").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("navbar").style.left="0";}, 200);
+    setTimeout(function(){document.getElementById("footer").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("footer").style.left="0";}, 200);
+    setTimeout(function(){document.getElementById("content").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("projects").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("projects").style.left="0";}, 800);
 
+
+    setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
+    setTimeout(function(){document.getElementById("content").style.position="static";}, 1200);
+    setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
+
+
+}
 function cursorChange(){
     let index = document.getElementById("cursors").selectedIndex;
     switch(index){
@@ -78,4 +100,5 @@ function cursorChange(){
             break;
     }
 }
+
 

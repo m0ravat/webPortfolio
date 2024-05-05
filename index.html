@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
-<body>
+<body style="visibility: hidden;" onload="load()">
     <div class="topnav" id="navbar">
         <div class="topnav-left">
             <a href="index.html" class="button" id="active">
@@ -28,18 +28,18 @@
             <a href="/HTML/contact.html" class="button">
                 <span class="material-symbols-outlined">contact_mail</span>
                 <span class="icon-text">Contact Me</span>
-            </a> 
+            </a>
+            <h1 style="float: left;" class="navTitle">Home Page</h1> 
         </div>
-
         <div class="topnav-right">
-            <button class="button" id="darkmode" onclick="darkclick()">
-                <span class="material-symbols-outlined">contrast</span>
-                <span class="icon-text">Light/Dark Mode</span>
-            </button> 
             <button class="button" id="menubutton">
                 <span class="material-symbols-outlined" onclick="menuclick()">menu</span>
                 <span class="icon-text">Hide/Show Menu</span>
             </button>       
+            <button class="button" id="darkmode" onclick="darkclick()">
+                <span class="material-symbols-outlined">contrast</span>
+                <span class="icon-text">Light/Dark Mode</span>
+            </button> 
         </div>
     </div>
     <div id="content">
@@ -54,7 +54,7 @@
             still a work in progress. </h3>
         </div>
         
-        <div class="box" id="aboutme">
+        <div class="box" id="content">
             <img src="/Media/about-me-icon.png" alt="UserIcon" class="boximg" id="img2">
             <h2 class="content">
                 Brief Overview
@@ -67,9 +67,8 @@
         <div class="box" id="projects">
             <img src="/Media/code.jpg" alt="" class="boximg" id="img3">
             <h2 class="content">Projects</h2>
-            <p class="content large">I have done a variety of projects, ranging from Java to HTML/CSS/JS to windows forms.
-                I have documented these projects on my website for those who may not want to look on github. Just incase, my GitHub 
-                link is <a href="https://github.com/m0ravat">here.</a> Otherwise, for a detailed documentation feel free to click on the
+            <p class="content large">I have done a variety of projects, ranging from Java to HTML/CSS/JS.
+                I have documented these projects on my website for those who may not want to look on github <a href="https://github.com/m0ravat">here.</a> Otherwise, for a detailed documentation feel free to click on the
                 "Projects" button on the navbar or <a href="/HTML/projects.html">Click here</a>
             </h3>
         </div>

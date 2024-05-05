@@ -3,16 +3,18 @@ body{
     background-image:url('/Media/whitebg.png');
     background-size: cover;
     color: rgb(0, 0, 0);
-    cursor: auto;
-    
 }
 
-#topbox, #navbar, #projects, #aboutme, #resume, #forms {
+#topbox,  #projects, #aboutme, #resume, #forms{
   visibility: hidden;
   position: relative;
   transition: left 0.5s ease; 
 }
-#topbox, #aboutme, #projects, #resume,  #forms {
+#topbox{
+  padding-top: 50px;
+  overflow: auto;
+}
+#topbox, #aboutme, #projects, #resume,  #forms{
   left: -100%; 
 }
 .title{
@@ -21,14 +23,19 @@ body{
   margin-top: 0;
 }
 .topnav {
+  float: left;
     position: fixed;
     height: 60px;
-    overflow: auto;
     top: 0;
     border-radius: 15px;
     padding: 5px;
-    background-color: #0091D5;
-    width: 100%;
+    background-color: #4bc497;
+    width: 98%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.topnav-right .button{
+  float: right;
 }
 .material-symbols-outlined{
   transform: scale(2);
@@ -41,36 +48,32 @@ div.top{
   margin-top: 30px;
 }
 .topnav-left .button{
-  height: 46px;
+  float: left;
 }
 .button{
-  float: left;
   text-align: center;
   padding-top: 15px;
   text-decoration: none;
-  width: 130px;
+  width: 10%;
   margin-right: 5px;
-  border: 2px solid black;
+  border: 0px;
   background-color: transparent;
-  color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 .button:hover {
   text-decoration: underline;
   font-weight: bold;
-  color: white;
+  color: rgb(0, 0, 0);
   .icon-text{
-    color: white;
+    color: rgb(0, 0, 0);
   }
 }
 a#active {
   color: rgb(0, 0, 0);
 }
-.button#active :hover{
-  .icon-text{
-    color: black;
-  }
-}
+
 .icon-text {
   display: block;
   text-align: center;
@@ -79,16 +82,13 @@ a#active {
   color: transparent;
 }
 .box{
-  max-height: 300px;
     margin-top: 10px;
+    max-height: 300px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: transparent;
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
-    overflow: hidden;
+    padding: 10px 100px 10px 100px;
+    overflow: auto;
     border-bottom: 2px solid grey;
 }
 div.long{
@@ -125,7 +125,8 @@ footer{
   background-color: rgb(141, 214, 214);
   font-size: 20px;
   padding: 5px;
-  width: 100%;
+  width: 98%;
+  margin-left: 10px;
 }
 footer:hover{
   opacity: 1.0;

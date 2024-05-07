@@ -32,17 +32,17 @@ function menuclick() {
 }
 
 function darkclick(){
-    if (dcount % 2 == 1){
+    if (dcount % 2 == 0){
         for (var i = 0; i < buttons.length; i++) {
             document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
-            document.body.style.color="#34eba8";
+            document.body.style.color="#2fdcec";
+            document.getElementById("navTitle").style.color="black";
         }
     }else{
         for (var i = 0; i < buttons.length; i++) {
             document.body.style.backgroundImage="url('/Media/whitebg.png')";
             document.body.style.color="black";
         }
-        document.getElementById("active").style.backgroundColor="#4bc497";
     }
     dcount++;
 }
@@ -57,11 +57,15 @@ function load(){
     setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("projects").style.visibility="visible";}, 800);
     setTimeout(function(){document.getElementById("projects").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("content").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
+
 
 
     setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
     setTimeout(function(){document.getElementById("content").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
+
 
 
 }

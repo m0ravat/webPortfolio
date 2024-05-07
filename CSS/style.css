@@ -1,11 +1,11 @@
 body{
     font-family: "Michroma", sans-serif;
-    background-image:url('/Media/whitebg.png');
+    background-image:url('/Media/darkbg.jpg');
     background-size: cover;
-    color: rgb(0, 0, 0);
+    color: #2fdcec;
 }
 
-#topbox,  #projects, #aboutme, #resume, #forms{
+#topbox,  #projects, #aboutme, #resume, #forms, #content{
   visibility: hidden;
   position: relative;
   transition: left 0.5s ease; 
@@ -14,22 +14,26 @@ body{
   padding-top: 50px;
   overflow: auto;
 }
-#topbox, #aboutme, #projects, #resume,  #forms{
+#topbox, #aboutme, #projects, #resume,  #forms, #content{
   left: -100%; 
 }
+
 .title{
   margin-left: 600px;
   font-size: 45px;
   margin-top: 0;
 }
+#navTitle{
+  color: black;
+}
 .topnav {
-  float: left;
+    float: left;
     position: fixed;
     height: 60px;
     top: 0;
     border-radius: 15px;
     padding: 5px;
-    background-color: #4bc497;
+    background-color: #2fdcec;
     width: 98%;
     margin-top: 5px;
     margin-left: 10px;
@@ -83,7 +87,7 @@ a#active {
 }
 .box{
     margin-top: 10px;
-    max-height: 300px;
+    max-height: 500px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: transparent;
@@ -211,6 +215,32 @@ legend{
   font-size: larger;
 }
 
-
+.projectBox{
+  height: 400px;
+  width: 300px;
+  border: 3px solid #2fdcec;
+  display: inline-block;
+  margin-right: 20px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.projectImg{
+  width: 300px;
+  max-height: 200px;
+  top: 0;
+  padding-bottom: 0px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.projectText{
+  width: 300px;
+  height: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  padding: 2px 5px 2px 5px;
+}
 
 

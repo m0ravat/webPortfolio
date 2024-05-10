@@ -10,14 +10,22 @@ body{
   position: relative;
   transition: left 0.5s ease; 
 }
+
+#topbox, #aboutme, #projects, #resume,  #forms, #content{
+  left: -100%; 
+}
+.widthtest{
+  background-color: red;
+  margin: 0;
+  padding: 0;
+  width: 1511px;
+  height: 10px;
+  visibility: visible;
+}
 #topbox{
   padding-top: 50px;
   overflow: auto;
 }
-#topbox, #aboutme, #projects, #resume,  #forms, #content{
-  left: -100%; 
-}
-
 .title{
   margin-left: 600px;
   font-size: 45px;

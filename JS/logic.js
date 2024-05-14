@@ -1,5 +1,5 @@
 var menu = document.getElementById("menubutton");
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("topnav");
 var buttons = document.querySelectorAll(".topnav-left .button");
 let count = 1;
 let dcount = 1;
@@ -10,21 +10,27 @@ var user = document.getElementById("userpImg");
 var active = document.getElementById("active");
 var topbox = document.getElementById("topbox");
 var cursor = document.getElementById("cursors");
-var title = document.getElementById("navTitle")
+var title = document.getElementById("navTitle");
+var cursors = document.getElementById("CursorOptions");
+var themes = document.getElementById("ThemeOptions");
 
 function menuclick() {
     if (count % 2 == 1) {
-        for (var i = 0; i < 4; i++) {
-            buttons[i].style.opacity = "0";
-            footer.style.opacity="0";
-            darkmode.style.opacity="0";
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].style.visibility="hidden";
+            footer.style.visibility="hidden";
+            darkmode.style.visibility="hidden";
+            cursors.style.visibility="hidden";
+            themes.style.visibility="hidden";
         }
         navbar.style.opacity="0.5";
     }else{
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.opacity = "1";
-            footer.style.opacity="1";
-            darkmode.style.opacity="1";
+            buttons[i].style.visibility="visible";;
+            footer.style.visibility="visible";;
+            darkmode.style.visibility="visible";;
+            cursors.style.visibility="visible";
+            themes.style.visibility="visible";
         }
         navbar.style.opacity="1";
     }
@@ -49,8 +55,8 @@ function darkclick(){
 function load(){
     setTimeout(function(){document.getElementById("topbox").style.visibility="visible";}, 400);
     setTimeout(function(){document.getElementById("topbox").style.left="0";}, 400);
-    setTimeout(function(){document.getElementById("navbar").style.visibility="visible";}, 200);
-    setTimeout(function(){document.getElementById("navbar").style.left="0";}, 200);
+    setTimeout(function(){document.getElementById("topnav").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("topnav").style.left="0";}, 200);
     setTimeout(function(){document.getElementById("footer").style.visibility="visible";}, 200);
     setTimeout(function(){document.getElementById("footer").style.left="0";}, 200);
     setTimeout(function(){document.getElementById("content").style.visibility="visible";}, 800);
@@ -101,6 +107,33 @@ function cursorChange(){
             break;
         case 9:
             document.body.style.cursor="url('https://sweezy-cursors.com/wp-content/uploads/cursor/among-us-john-wick-skin/among-us-john-wick-skin-cursor-32x32.png'),auto";
+            break;
+    }
+}
+
+function themeChange(){
+    let optionval = document.getElementById("themes").selectedIndex;
+    switch(optionval){
+        case 0:
+            document.body.style.color="#2fdcec";
+            break;
+        case 1:
+            document.body.style.color="#2fdcec";
+            break;                
+        case 2:
+            document.body.style.color="#2fdcec";
+            break;                
+        case 3:
+            document.body.style.color="#2fdcec";
+            break;
+        case 4:
+            document.body.style.color="#2fdcec";
+            break;
+        case 5:
+            document.body.style.color="#2fdcec";
+            break;
+        case 6:
+            document.body.style.color="";
             break;
     }
 }

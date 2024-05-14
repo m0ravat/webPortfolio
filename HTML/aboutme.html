@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
 <body style="visibility: hidden;" onload="load()">
-    <div class="topnav" id="navbar">
+    <div id="topnav">
         <div class="topnav-left">
             <a href="/index.html" class="button">
                 <span class="material-symbols-outlined">home</span>
@@ -40,7 +40,31 @@
                 <span class="material-symbols-outlined">contrast</span>
                 <span class="icon-text">Light/Dark Mode</span>
             </button> 
-            
+            <label for="cursors" class="button" id="CursorOptions">
+                <select name="cursor" id="cursors" onchange="cursorChange()" class="selecT">
+                    <option value="default">Default Cursor</option>
+                    <option value="bluesaber">BlueSaber</option>
+                    <option value="redsaber">RedSaber</option>
+                    <option value="Fist">Electric Fist</option>
+                    <option value="Pointer">Pointer</option>
+                    <option value="RedHand">Red Hand</option>
+                    <option value="whitec">White car</option>
+                    <option value="redc">Red Car</option>
+                    <option value="purplec">Purple Car</option>
+                    <option value="gun">Gun</option>
+                </select>
+        </label>
+        <label for="themes" class="button" id="ThemeOptions">
+            <select name="theme" id="themes" onchange="themeChange()" class="selecT">
+                <option value="">Default Blue</option>
+                <option value="">Light Green</option>
+                <option value="">Red</option>
+                <option value="">Orange</option>
+                <option value="">Dark Blue</option>
+                <option value="">Purple</option>
+                <option value="">Dark Green</option>
+            </select>
+        </label>
         </div>
     </div>
     <div>

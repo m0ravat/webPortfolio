@@ -3,6 +3,7 @@ body{
     background-image:url('/Media/darkbg.jpg');
     background-size: cover;
     color: #2fdcec;
+    position: relative;
 }
 
 /*Text CSS*/
@@ -109,6 +110,8 @@ footer{
   background-color: rgb(141, 214, 214);
   font-size: 20px;
   padding: 10px;
+  color: purple;
+  left: 0;
 }
 footer:hover{
   opacity: 1.0;

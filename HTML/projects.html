@@ -30,20 +30,7 @@
                 <span class="material-symbols-outlined">contact_mail</span>
                 <span class="icon-text">Contact Me</span>
             </a>
-            <label for="cursors" class="button" id="CursorOptions">
-                <select name="cursor" id="cursors" onchange="cursorChange()" class="selecT">
-                    <option value="default">Default Cursor</option>
-                    <option value="bluesaber">BlueSaber</option>
-                    <option value="redsaber">RedSaber</option>
-                    <option value="Fist">Electric Fist</option>
-                    <option value="Pointer">Pointer</option>
-                    <option value="RedHand">Red Hand</option>
-                    <option value="whitec">White car</option>
-                    <option value="redc">Red Car</option>
-                    <option value="purplec">Purple Car</option>
-                    <option value="gun">Gun</option>
-                </select>
-        </label>
+            <h1 style="float: left;" id="navTitle">Project Page</h1> 
         </div>
         <div class="topnav-right">
             <button class="button" id="menubutton">
@@ -54,17 +41,6 @@
                 <span class="material-symbols-outlined">contrast</span>
                 <span class="icon-text">Light/Dark Mode</span>
             </button> 
-            <label for="themes" class="button" id="ThemeOptions">
-                <select name="theme" id="themes" onchange="themeChange()" class="selecT">
-                    <option value="">Default Blue</option>
-                    <option value="">Light Green</option>
-                    <option value="">Red</option>
-                    <option value="">Orange</option>
-                    <option value="">Dark Blue</option>
-                    <option value="">Purple</option>
-                    <option value="">Dark Green</option>
-                </select>
-            </label> 
         </div>
     </div>
     <div>
@@ -115,7 +91,32 @@
             </div>
         </div>
     </div>
-    
-    <footer id="footer"><a href="/HTML/contact.html">Contact Me: <span class="material-symbols-outlined" style="transform: scale(1.5); margin-left: 5px;">contact_mail</span></a></footer>
+    <footer id="footer">
+        <label for="cursors" class="customization" id="CursorOptions">Cursors:   
+            <select name="cursor" id="cursors" onchange="cursorChange()" class="selecT">
+                <option value="default">Default Cursor</option>
+                <option value="bluesaber">BlueSaber</option>
+                <option value="redsaber">RedSaber</option>
+                <option value="Fist">Electric Fist</option>
+                <option value="Pointer">Pointer</option>
+                <option value="RedHand">Red Hand</option>
+                <option value="whitec">White car</option>
+                <option value="redc">Red Car</option>
+                <option value="purplec">Purple Car</option>
+                <option value="gun">Gun</option>
+            </select>
+        </label><br>
+        <label for="themes" class="customization" id="ThemeOptions">Themes: 
+            <select name="theme" id="themes" onchange="themeChange()" class="selecT">
+                <option value="">Blue/Black</option>
+                <option value="">Light Green</option>
+                <option value="">Red</option>
+                <option value="">Orange</option>
+                <option value="">Dark Blue</option>
+                <option value="">Purple</option>
+                <option value="">Dark Green</option>
+        </select>
+    </label>
+    </footer>
 </body>
 </html>

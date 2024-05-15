@@ -41,13 +41,10 @@ function darkclick(){
     if (dcount % 2 == 0){
         for (var i = 0; i < buttons.length; i++) {
             document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
-            document.body.style.color="#2fdcec";
-            document.getElementById("navTitle").style.color="black";
         }
     }else{
         for (var i = 0; i < buttons.length; i++) {
             document.body.style.backgroundImage="url('/Media/whitebg.png')";
-            document.body.style.color="black";
         }
     }
     dcount++;
@@ -65,7 +62,12 @@ function load(){
     setTimeout(function(){document.getElementById("projects").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("content").style.visibility="visible";}, 800);
     setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
-
+    setTimeout(function(){document.getElementById("CursorOptions").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("CursorOptions").style.left="0";}, 200);
+    setTimeout(function(){document.getElementById("right").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("right").style.left="0";}, 200);
+    setTimeout(function(){document.getElementById("customization").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("customization").style.left="0";}, 200);
 
 
     setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
@@ -116,24 +118,48 @@ function themeChange(){
     switch(optionval){
         case 0:
             document.body.style.color="#2fdcec";
+            navbar.style.backgroundColor="#2fdcec";
+            document.getElementById("width").style.backgroundColor="#2fdcec";
             break;
         case 1:
-            document.body.style.color="#2fdcec";
-            break;                
+            document.body.style.color="black";
+            navbar.style.backgroundColor="grey";
+            document.getElementById("width").style.backgroundColor="black";
+            break;
         case 2:
-            document.body.style.color="#2fdcec";
-            break;                
+            document.body.style.color="white";
+            navbar.style.backgroundColor="white";
+            document.getElementById("width").style.backgroundColor="white";
+            break;
         case 3:
-            document.body.style.color="#2fdcec";
-            break;
+            document.body.style.color="#33ffb4";
+            navbar.style.backgroundColor="#33ffb4";
+            document.getElementById("width").style.backgroundColor="#33ffb4";
+            break;                
         case 4:
-            document.body.style.color="#2fdcec";
-            break;
+            document.body.style.color="red";
+            navbar.style.backgroundColor="red";
+            document.getElementById("width").style.backgroundColor="red";
+            break;                
         case 5:
-            document.body.style.color="#2fdcec";
+            document.body.style.color="#ff5e00";
+            navbar.style.backgroundColor="#ff5e00";
+            document.getElementById("width").style.backgroundColor="#ff5e00";
             break;
         case 6:
-            document.body.style.color="";
+            document.body.style.color="#0400ff";
+            navbar.style.backgroundColor="#0400ff";
+            document.getElementById("width").style.backgroundColor="#0400ff";
+            break;
+        case 7:
+            document.body.style.color="#d222d2";
+            navbar.style.backgroundColor="#d222d2";
+            document.getElementById("width").style.backgroundColor="#d222d2";
+            break;
+        case 8:
+            document.body.style.color="#4bc497";
+            navbar.style.backgroundColor="#4bc497";
+            document.getElementById("width").style.backgroundColor="#4bc497";
             break;
     }
 }

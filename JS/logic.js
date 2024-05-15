@@ -45,6 +45,7 @@ function darkclick(){
     }else{
         for (var i = 0; i < buttons.length; i++) {
             document.body.style.backgroundImage="url('/Media/whitebg.png')";
+            document.body.style.color="black";
         }
     }
     dcount++;

@@ -13,9 +13,6 @@ h1{
   margin-top: 0;
 }
 
-.large{
-  font-size: large;
-}
 p{
   font-size: medium;
   text-align: left;
@@ -127,21 +124,17 @@ footer:hover{
 
 .box{
     margin-top: 10px;
-    max-height: 500px;
+    max-height: 1000px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: transparent;
     padding: 10px 100px 10px 100px;
     overflow: auto;
     border-bottom: 2px solid grey;
-}
-div.long{
-  max-height: 800px;
-  height: 800px;
-}
-
-.content{
-  width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /*Box CSS*/
 
@@ -157,14 +150,19 @@ div.long{
 }
 .boximg{
   height: 300px;
-  float: right;
 }
 /*Index CSS*/
-
+.text{
+  max-width: 500px;
+  p{
+    font-size: large;
+  }
+}
 
 /* About me CSS*/
 .resume{
   height: 800px;
+  width: 99%;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -174,15 +172,24 @@ div.long{
   padding: 10px 10px 10px 10px;
   color: #4bc497;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: unwrap;
+  justify-content: space-around;
 }
 .leftCV{
   font-weight: bold;
   float: left;
   background-color: white;
-  width: 350px;
+  max-width: 25%;
   height: 800px;
   overflow: hidden;
   border: 2px solid black;
+}
+.rightCV{
+  height: 800px;
+  background-color: white;
+  text-align: center;
+  max-width: 74%;
 }
 .imgCV{
   width: 350px;
@@ -195,13 +202,6 @@ div.long{
   height: 500px;
   width: 350px;
   background-color: white;
-}
-.rightCV{
-  margin-left: 380px;
-  height: 800px;
-  background-color: white;
-  width: 1080px;
-  text-align: center;
 }
 div.section{
   padding: 5px 5px 5px 5px;

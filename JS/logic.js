@@ -39,14 +39,11 @@ function menuclick() {
 
 function darkclick(){
     if (dcount % 2 == 0){
-        for (var i = 0; i < buttons.length; i++) {
-            document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
-        }
+        document.body.style.backgroundImage="url('/Media/whitebg.png')";
+        themeLight();
     }else{
-        for (var i = 0; i < buttons.length; i++) {
-            document.body.style.backgroundImage="url('/Media/whitebg.png')";
-            document.body.style.color="black";
-        }
+        document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
+        themeDark();
     }
     dcount++;
 }
@@ -65,16 +62,20 @@ function load(){
     setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("CursorOptions").style.visibility="visible";}, 200);
     setTimeout(function(){document.getElementById("CursorOptions").style.left="0";}, 200);
-    setTimeout(function(){document.getElementById("right").style.visibility="visible";}, 200);
-    setTimeout(function(){document.getElementById("right").style.left="0";}, 200);
-    setTimeout(function(){document.getElementById("customization").style.visibility="visible";}, 200);
-    setTimeout(function(){document.getElementById("customization").style.left="0";}, 200);
 
 
     setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
     setTimeout(function(){document.getElementById("content").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
 
+    if(dcount%2 ==0){
+        document.body.style.backgroundImage="url('/Media/whitebg.png')";
+        themeLight();
+    }
+    else{
+        document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
+        themeDark();
+    }
 
 
 }
@@ -114,53 +115,81 @@ function cursorChange(){
     }
 }
 
-function themeChange(){
+document.getElementById("themes").addEventListener("change",changeColour);
+function changeColour(){
+    if (dcount % 2 ==1){
+        themeDark();
+    }
+    else{
+        themeLight();
+    }
+}
+
+function themeLight(){
     let optionval = document.getElementById("themes").selectedIndex;
     switch(optionval){
         case 0:
             document.body.style.color="#2fdcec";
             navbar.style.backgroundColor="#2fdcec";
-            document.getElementById("width").style.backgroundColor="#2fdcec";
             break;
         case 1:
             document.body.style.color="black";
-            navbar.style.backgroundColor="grey";
-            document.getElementById("width").style.backgroundColor="black";
+            navbar.style.backgroundColor="black";
             break;
         case 2:
-            document.body.style.color="white";
-            navbar.style.backgroundColor="white";
-            document.getElementById("width").style.backgroundColor="white";
+            document.body.style.color="#34eba4";
+            navbar.style.backgroundColor="#34eba8";
             break;
         case 3:
-            document.body.style.color="#33ffb4";
-            navbar.style.backgroundColor="#33ffb4";
-            document.getElementById("width").style.backgroundColor="#33ffb4";
+            document.body.style.color="#d42b25";
+            navbar.style.backgroundColor="#d42b25";
             break;                
         case 4:
-            document.body.style.color="red";
-            navbar.style.backgroundColor="red";
-            document.getElementById("width").style.backgroundColor="red";
-            break;                
-        case 5:
             document.body.style.color="#ff5e00";
             navbar.style.backgroundColor="#ff5e00";
-            document.getElementById("width").style.backgroundColor="#ff5e00";
+            break;                
+        case 5:
+            document.body.style.color="#a735ff";
+            navbar.style.backgroundColor="#a735ff";
             break;
         case 6:
-            document.body.style.color="#0400ff";
-            navbar.style.backgroundColor="#0400ff";
-            document.getElementById("width").style.backgroundColor="#0400ff";
+            document.body.style.color="#ff3597";
+            navbar.style.backgroundColor="#ff3597";
             break;
-        case 7:
-            document.body.style.color="#d222d2";
-            navbar.style.backgroundColor="#d222d2";
-            document.getElementById("width").style.backgroundColor="#d222d2";
+    }
+}
+
+
+function themeDark(){
+    let optionval = document.getElementById("themes").selectedIndex;
+    switch(optionval){
+        case 0:
+            document.body.style.color="#2fdcec";
+            navbar.style.backgroundColor="#2fdcec";
             break;
-        case 8:
-            document.body.style.color="#4bc497";
-            navbar.style.backgroundColor="#4bc497";
-            document.getElementById("width").style.backgroundColor="#4bc497";
+        case 1:
+            document.body.style.color="white";
+            navbar.style.backgroundColor="white";
+            break;
+        case 2:
+            document.body.style.color="#34eba8";
+            navbar.style.backgroundColor="#34eba8";
+            break;
+        case 3:
+            document.body.style.color="#e53529";
+            navbar.style.backgroundColor="#e53529";
+            break;                
+        case 4:
+            document.body.style.color="#ff5e00";
+            navbar.style.backgroundColor="#ff5e00";
+            break;                
+        case 5:
+            document.body.style.color="#a735ff";
+            navbar.style.backgroundColor="#a735ff";
+            break;
+        case 6:
+            document.body.style.color="#ff3597";
+            navbar.style.backgroundColor="#ff3597";
             break;
     }
 }

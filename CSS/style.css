@@ -1,8 +1,6 @@
 body{
     font-family: "Michroma", sans-serif;
-    background-image:url('/Media/darkbg.jpg');
     background-size: cover;
-    color: #2fdcec;
     position: relative;
 }
 

@@ -26,8 +26,8 @@ function menuclick() {
         navbar.style.opacity="0.5";
     }else{
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.visibility="visible";;
-            footer.style.visibility="visible";;
+            buttons[i].style.visibility="visible";
+            footer.style.visibility="visible";
             darkmode.style.visibility="visible";;
             cursors.style.visibility="visible";
             themes.style.visibility="visible";
@@ -38,14 +38,14 @@ function menuclick() {
 }
 
 function darkclick(){
-    if (dcount % 2 == 0){
-        document.body.style.backgroundImage="url('/Media/whitebg.png')";
-        themeLight();
-    }else{
+    dcount++;
+    if (dcount % 2 == 1){
         document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
         themeDark();
+    }else{
+        document.body.style.backgroundImage="url('/Media/whitebg.png')";
+        themeLight();
     }
-    dcount++;
 }
 function load(){
     setTimeout(function(){document.getElementById("topbox").style.visibility="visible";}, 400);
@@ -68,13 +68,13 @@ function load(){
     setTimeout(function(){document.getElementById("content").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
 
-    if(dcount%2 ==0){
-        document.body.style.backgroundImage="url('/Media/whitebg.png')";
-        themeLight();
-    }
-    else{
+    if(dcount%2 ==1){
         document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
         themeDark();
+    }
+    else{
+        document.body.style.backgroundImage="url('/Media/whitebg.png')";
+        themeLight();
     }
 
 
@@ -126,19 +126,25 @@ function changeColour(){
 }
 
 function themeLight(){
+    document.getElementById("navTitle").style.color="white";
     let optionval = document.getElementById("themes").selectedIndex;
     switch(optionval){
         case 0:
-            document.body.style.color="#2fdcec";
-            navbar.style.backgroundColor="#2fdcec";
+            document.body.style.color="blue";
+            navbar.style.backgroundColor="blue";
             break;
         case 1:
             document.body.style.color="black";
             navbar.style.backgroundColor="black";
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].style.color="white";
+                darkmode.style.color="white";
+                menu.style.color="white";
+            }
             break;
         case 2:
-            document.body.style.color="#34eba4";
-            navbar.style.backgroundColor="#34eba8";
+            document.body.style.color="rgb(0, 128, 85)";
+            navbar.style.backgroundColor="rgb(0, 128, 85)";
             break;
         case 3:
             document.body.style.color="#d42b25";
@@ -153,14 +159,16 @@ function themeLight(){
             navbar.style.backgroundColor="#a735ff";
             break;
         case 6:
-            document.body.style.color="#ff3597";
-            navbar.style.backgroundColor="#ff3597";
+            document.body.style.color="rgb(255, 0, 85)";
+            navbar.style.backgroundColor="rgb(255, 0, 85)";
             break;
     }
 }
 
 
 function themeDark(){
+    document.getElementById("navTitle").style.color="black";
+
     let optionval = document.getElementById("themes").selectedIndex;
     switch(optionval){
         case 0:
@@ -170,6 +178,11 @@ function themeDark(){
         case 1:
             document.body.style.color="white";
             navbar.style.backgroundColor="white";
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].style.color="black";
+                darkmode.style.color="black";
+                menu.style.color="black";
+            }
             break;
         case 2:
             document.body.style.color="#34eba8";

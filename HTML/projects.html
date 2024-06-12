@@ -12,7 +12,7 @@
     <script defer src="/JS/logic.js"></script>
 </head>
 <body style="visibility: hidden;" onload="load()">
-    <div id="topnav">
+    <div  id="topnav">
         <div class="topnav-left">
             <a href="/index.html" class="button">
                 <span class="material-symbols-outlined">home</span>
@@ -22,7 +22,7 @@
                 <span class="material-symbols-outlined">person</span>
                 <span class="icon-text">About Me</span>
             </a>
-            <a href="/HTML/projects.html" class="button" id="active">
+            <a href="/HTML/projects.html" class="button"  id="active">
                 <span class="material-symbols-outlined">workspaces</span>
                 <span class="icon-text">Projects</span>
             </a>
@@ -30,7 +30,7 @@
                 <span class="material-symbols-outlined">contact_mail</span>
                 <span class="icon-text">Contact Me</span>
             </a>
-            <h1 style="float: left;" id="navTitle">Project Page</h1> 
+            <h1 style="float: left;" id="navTitle">Projects</h1> 
         </div>
         <div class="topnav-right">
             <button class="button" id="menubutton">
@@ -53,7 +53,7 @@
                     marks and calculate the result of that module. It included saving it in a list and text file. This had me combine
                     validation and other concepts.
                      For more information
-                    please click <a href="" target="_blank">here.</a>
+                    please click <a href="/Projects/module.html" target="_blank">here.</a>
                 </div>
             </div>
             <div class="projectBox">
@@ -63,7 +63,7 @@
                 <div class="projectText">
                     This was my second programming project set in university, however in Java. This was more intricate, 
                     as it was a plane booking system which stored user data as well. This was done through object oriented programming
-                    For more information please click <a href="" target="_blank">here.</a>
+                    For more information please click <a href="/Projects/plane.html" target="_blank">here.</a>
                 </div>
             </div>
             <div class="projectBox">
@@ -74,7 +74,7 @@
                     I also did a group project, with 3 other students. My role was to create a template for everyone to follow,
                     and to create the home page and feedback page. This really helped me develop my basic web development 
                     skills on <br> my own.
-                     For more information click <a href="" target="_blank">here.</a>
+                     For more information click <a href="/Projects/group.html" target="_blank">here.</a>
                 </div>
             </div>
             <div class="projectBox">
@@ -85,36 +85,36 @@
                     This is for my current website, which I decided to make to show off skills that I have learnt. 
                     This is the longest project I have pursued and it has really challenged my skills. It is my hope to
                     keep building on to this.
-                    For more information click <a href="" target="_blank">here.</a>
+                    For more information click <a href="/Projects/portfolio.html" target="_blank">here.</a>
                 </div>
             </div>
         </div>
-    <footer id="footer">
-        <label for="cursors" class="customization" id="CursorOptions">Cursors:   
-            <select name="cursor" id="cursors" onchange="cursorChange()" class="selecT">
-                <option value="default">Default Cursor</option>
-                <option value="bluesaber">BlueSaber</option>
-                <option value="redsaber">RedSaber</option>
-                <option value="Fist">Electric Fist</option>
-                <option value="Pointer">Pointer</option>
-                <option value="RedHand">Red Hand</option>
-                <option value="whitec">White car</option>
-                <option value="redc">Red Car</option>
-                <option value="purplec">Purple Car</option>
-                <option value="gun">Gun</option>
+        <footer id="footer">
+            <label for="cursors" class="customization" id="CursorOptions">Cursors:   
+                <select name="cursor" id="cursors" onchange="cursorChange()" class="selecT">
+                    <option value="default">Default Cursor</option>
+                    <option value="bluesaber">BlueSaber</option>
+                    <option value="redsaber">RedSaber</option>
+                    <option value="Fist">Electric Fist</option>
+                    <option value="Pointer">Pointer</option>
+                    <option value="RedHand">Red Hand</option>
+                    <option value="whitec">White car</option>
+                    <option value="redc">Red Car</option>
+                    <option value="purplec">Purple Car</option>
+                    <option value="gun">Gun</option>
+                </select>
+            </label><br>
+            <label for="themes" class="customization" id="ThemeOptions">Themes: 
+                <select name="theme" id="themes" class="selecT">
+                    <option value="">Blue Theme</option>
+                    <option value="">Black/white</option>
+                    <option value="">Green</option>
+                    <option value="">Red</option>
+                    <option value="">Orange</option>
+                    <option value="">Purple</option>
+                    <option value="">Pink</option>
             </select>
-        </label><br>
-        <label for="themes" class="customization" id="ThemeOptions">Themes: 
-            <select name="theme" id="themes" onchange="themeChange()" class="selecT">
-                <option value="">Blue/Black</option>
-                <option value="">Light Green</option>
-                <option value="">Red</option>
-                <option value="">Orange</option>
-                <option value="">Dark Blue</option>
-                <option value="">Purple</option>
-                <option value="">Dark Green</option>
-        </select>
-    </label>
+        </label>
     </footer>
 </body>
 </html>

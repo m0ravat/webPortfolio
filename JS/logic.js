@@ -22,6 +22,7 @@ function menuclick() {
             darkmode.style.visibility="hidden";
             cursors.style.visibility="hidden";
             themes.style.visibility="hidden";
+            document.getElementById("navTitle").style.visibility="hidden";
         }
         navbar.style.opacity="0.5";
     }else{
@@ -31,6 +32,7 @@ function menuclick() {
             darkmode.style.visibility="visible";;
             cursors.style.visibility="visible";
             themes.style.visibility="visible";
+            document.getElementById("navTitle").style.visibility="visible";
         }
         navbar.style.opacity="1";
     }
@@ -62,11 +64,15 @@ function load(){
     setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("CursorOptions").style.visibility="visible";}, 200);
     setTimeout(function(){document.getElementById("CursorOptions").style.left="0";}, 200);
+    setTimeout(function(){document.getElementById("bottomInfo").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("bottomInfo").style.left="0";}, 800);
 
 
     setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
     setTimeout(function(){document.getElementById("content").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
+    setTimeout(function(){document.getElementById("bottomInfo").style.position="static";}, 1200);
+
 
     if(dcount%2 ==1){
         document.body.style.backgroundImage="url('/Media/darkbg.jpg')";

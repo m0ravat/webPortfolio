@@ -4,6 +4,52 @@ body{
     position: relative;
 }
 
+#bottomInfo{
+  background-color: #000000;
+  color: yellow;
+  margin-top: 0;
+  justify-content: space-between;
+  padding: 0px 50px 100px 50px;
+  a{
+    color: yellow;
+  }
+  a:hover{
+    color: white;
+  }
+  li{
+    list-style-type: square;
+    color: #2fdcec;
+  }
+}
+#bottomInfo .socials{
+  li{
+    list-style-type: none;
+  }
+}
+
+#bottomInfo div{
+  max-width: 450px;
+  margin-top: 30px;
+}
+
+.inLine{
+  li{
+    display: inline;
+  }
+}
+
+.flex{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  i{
+    margin-right: 60px;
+    margin-top: 30px;
+  }
+}
+
 /*Text CSS*/
 h1{
   text-decoration: underline;
@@ -22,13 +68,13 @@ p.black{
 
 
 /*Animation css */
-#topbox,  #projects, #aboutme, #resume, #forms, #content{
+#topbox, #aboutme, #resume, #forms, #content, #bottomInfo{
   visibility: hidden;
   position: relative;
   transition: left 0.5s ease; 
 }
 
-#topbox, #aboutme, #projects, #resume,  #forms, #content{
+#topbox, #aboutme, #resume,  #forms, #content, #bottomInfo{
   left: -100%; 
 }
 /*Animation css */
@@ -38,6 +84,7 @@ p.black{
 #topnav {
   position: fixed;
   min-height: 60px;
+  max-height: 80px;
   top: 0;
   border-radius: 15px;
   padding: 5px;
@@ -48,6 +95,12 @@ p.black{
 }
 .topnav-left .button{
 float: left;
+}
+.topnav-left{
+  max-height: 70px;
+}
+.topnav-right{
+  max-height: 70px;
 }
 .topnav-right .button{
 float: right;
@@ -65,7 +118,8 @@ color: transparent;
 }
 #navTitle{
 color: black;
-margin-left: 10px;
+margin-left: 25px;
+margin-top: 5px;
 }
 .button{
 text-align: center;
@@ -126,7 +180,7 @@ footer:hover{
 
 /*Box CSS*/
 #topbox{
-  padding-top: 70px;
+  padding-top: 90px;
   overflow: hidden;
 }
 
@@ -263,6 +317,7 @@ legend{
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   margin: 5px;
+
 
 }
 .projectImg{

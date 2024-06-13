@@ -8,6 +8,7 @@ body{
   background-color: #000000;
   color: yellow;
   margin-top: 0;
+  font-size: 18px;
   justify-content: space-between;
   padding: 0px 50px 100px 50px;
   a{

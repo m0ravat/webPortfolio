@@ -187,12 +187,12 @@ footer:hover{
 
 .box{
     margin-top: 10px;
-    max-height: 1000px;
+    max-height: 2000px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: transparent;
     padding: 10px 100px 10px 100px;
-    overflow: auto;
+    overflow: hidden;
     border-bottom: 2px solid grey;
     display: flex;
     flex-direction: row;
@@ -281,11 +281,12 @@ span.padd{
 /* contact me css*/
 fieldset{
   width: 500px;
-  height: 800px;
+  min-height: 800px;
   background-color: #4bc497;
   color: rgb(118, 10, 135);
   font-weight: bold;
   font-size: 1.4vw;
+  margin-right: 50px;
 }
 label, input{
   font-size: 1.4vw;
@@ -308,7 +309,9 @@ legend{
   font-size: larger;
 }
 /* contact me css*/
-
+.bold{
+  font-weight: bolder;
+}
 
 /* Project Page CSS */
 .projectBox{

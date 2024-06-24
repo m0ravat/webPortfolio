@@ -10,6 +10,7 @@ body{
 .title{
     font-size: 50px;
     color: rgb(255, 225, 159);
+    margin-right: 200px;
 }
 .desc{
     color: bisque;
@@ -21,6 +22,9 @@ body{
 a{
     color: bisque;
     text-decoration: none;
+}
+.bold{
+    font-weight: bold;
 }
 a:hover{
     text-decoration: underline;
@@ -89,6 +93,7 @@ h2{
 .resource{
     text-align: center;
     padding: 10px;
+    color: #74C0FC;
     margin: 15px;
     height: 100px;
     img{
@@ -111,4 +116,9 @@ h2{
     p{
         visibility: visible;
     }
+}
+
+#stack{
+    flex-wrap: nowrap;
+    
 }

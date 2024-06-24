@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/CSS/projects.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PersonalPortfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -13,78 +12,92 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
 </head>
 <body>
     <h1 class="title">Personal Portfolio</h1>
-    <div class="desc"><a href="/index.html">Home</a> / <a href="/HTML/projects.html">Projects</a> / <a href="/Projects/group.html">Personal website</a></div>
+    <div class="desc">
+        <a href="/index.html">Home</a> / 
+        <a href="/HTML/projects.html">Projects</a> / 
+        <a href="/index.html" target="_blank">Project</a>
+    </div>
     <div class="container">
-        <div class="tags">Portfolio</div>
-        <div class="tags">HTML</div>
-        <div class="tags">CSS</div>
-        <div class="tags">JS</div>
-        <div class="tags">GitHub</div>
-        <div class="tags">Vercel</div>
-        <div class="tags">VS_Code</div>
+        <div class="tags">Web Development</div>
+        <div class="tags">Web Design</div>
+        <div class="tags">Website Deployment</div>
     </div>
     <div class="container wrap">
         <div class="firstImg">
-            <img src="/Media/port.png" alt="">
+            <img src="/Media/port.png" alt="Image of Home page">
         </div>
         <div class="contents">
-            <h2>Table of Contents</h2>
-            - <a href="#summary">Summary</a> <br>
-            - <a href="#analysis">Analysis</a> <br>
-            - <a href="#process">Process</a> <br>
-            - <a href="#reflection">Reflection</a>
+            <h2>Table of Contents</h2> <br>
+            - <a href="https://web-portfolio-orpin-nu.vercel.app/" target="_blank">Project Website</a> <br>
+            - <a href="https://github.com/m0ravat/webPortfolio" target="_blank">GitHub</a> <br>
+            - <a href="#stack">Stack</a> <br>
+            - <a href="#intro">Introduction</a> <br>
+            - <a href="#skills">Skills developed</a> <br>
+            - <a href="#reflection">Reflection</a> <br>
         </div>
     </div>
-    <div class="container wrap width" id="summary">
-        <h1 class="title">Summary</h1>
+    <div class="container wrap width" id="stack">
+        <h1>Stack: </h1> <br>
+        <div class="resource">
+            <i class="fa-brands fa-html5" style="color: #74C0FC;"></i>
+            <p class="small hidden">HTML</p>
+        </div>
+        <div class="resource">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p class="small hidden">CSS</p>
+        </div>
+        <div class="resource">
+            <i class="fa-brands fa-js"></i>
+            <p class="small hidden">JavaScript</p>
+        </div>
+        <div class="resource">
+            <i class="fa-solid fa-file-code"></i>
+            <p class="small hidden">VS Code</p>
+        </div>
+        <div class="resource">
+            <i class="fa-brands fa-vimeo-v"></i>
+            <p class="small hidden">Vercel</p>
+        </div>
+    </div>
+    <div class="container wrap width" id="intro">
+        <h1 class="title">Introduction</h1>
         <p>
-            This is for my website you are currently on. After my first year of university ended I realised me web programming was 
-            very weak compared to my proficiency in Java and Python, so I undertook this challenging project to improve my skills and 
-            showcase them for prospective employers. This has by far been my longest project, and challenged me in many ways ,
-            especially when considering making the interface nice to look at. 
+            This is a personal website I made upon completion of my first year of university to showcase my skills 
+            towards future employers in the hopes of securing a placement year/internship. I realised software engineering 
+            is an extremely competitive field, so to stand out I decided I needed to start making projects to showcase my skills, and 
+            to do this I would need a personal website. This turned out to be a challenge, but upon making the basic look of each main 
+            page I decided to add some functionality through the use of a light/dark mode, hide/show menu options as well as theme/cursor 
+            options at the bottom. I ensured the website had a consistent feel, then proceeded to make my projects pages seperate, for 
+            the sake of consistency. I also gave it a more simple and effective look. The footer was created at around the same time 
+            to act as a sort of sitemap for easy navigation and access. 
         </p>
     </div>
-    <div class="container wrap width" id="analysis">
-        <h1 class="title">Analysis</h1>
+    <div class="container wrap width" id="skills">
+        <h1 class="title">Skills developed</h1>
         <p>
-            I first began by looking at various portfolio website examples online for inspiration, and took alot of it from 
-            <a href="https://www.hostinger.co.uk/tutorials/web-developer-portfolio">here.</a> I started off by deciding to make 
-            a home page, about me page, projects page and contact page to prevent the website from becoming too long. It also helped 
-            make the code look cleaner by putting it on different HTML files, for my sake. I also added a navbar, with a hide menu option 
-            and dark mode option which uses basic JavaScript. I also included a custom cursor and theme option bottom left for customisability 
-            and to show off some more basic JavaScript skills. Recently, I added a section at the bottom also as a sitemap, for easy 
-            navigation throughout the site. The about me page had me use my HTML/CSS skills to create my general resume in a more 
-            readable form. It helped me in practicing formatting divs and basic styling, as the icons at first became tedious. 
-        </p>
-    </div>
-    <div class="container wrap width" id="process">
-        <h1 class="title">Process</h1>
-        <p>
-            This project forced me to use many elements and styling techniques, including combining classes. At this point my JavaScript 
-            is mainly built up of basic statements that manipulate certain styling, and uses many switch-case and if/else statements. 
-            I also used the practice of flexboxes which I picked up on <a href="https://www.theodinproject.com/">The Odin Project.</a>
-            I also used <a href="https://www.w3schools.com/">w3schools</a> to follow up. I also practiced efficient file formatting to make 
-            readability easier and seperated certain styling in my CSS file to navigate quickly, preventing the need for multiple CSS files.
-            I also used <a href="https://fonts.google.com/">Google Fonts, </a> <a href="https://fonts.google.com/icons">Google Icons, </a> 
-            and <a href="https://fontawesome.com/">Font Awesome</a> for some other icons. My choice of IDE was Visual Studio Code
+            HTML/CSS/JS <br>
+            Website Development <br>
+            Website Design <br>
+            Website Deployment
         </p>
     </div>
     <div class="container wrap width" id="reflection">
         <h1 class="title">Reflection</h1>
         <p>
-            On reflection, I would definitely say this project helped me, in my skills from consideration of the user's experience
-            to designing the look of a web page. This also helped me improve my web programming skills, and has thus given me 
-            the confidence to make websites. I would say my next obstacle would be to consider responsiveness, as my website is 
-            very poorly equipped for mobile users, and I should soon consider moving on to using frameworks in the future. 
+            Upon reflection as of 24/06/2024, I feel this project has really helped me in terms of my web development skills. 
+            I can create websites alot quicker than before, and the styling which was an obstacle has come easy. I have showcased 
+            my skills in JavaScript through my calculator project, and hope to showcase it in future projects to come. 
         </p>
     </div>
     <div class="nav">
-        <a href="#summary" class="button">Summary</a>
-        <a href="#analysis" class="button">Analysis</a>
-        <a href="#process" class="button">Process</a>
+        <a href="#stack" class="button">Stack</a>
+        <a href="#intro" class="button">Introduction</a>
+        <a href="#skills" class="button">Skills Developed</a>
         <a href="#reflection" class="button">Reflection</a>
     </div>
 </body>

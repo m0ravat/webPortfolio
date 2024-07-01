@@ -270,8 +270,8 @@ footer:hover{
   min-height: 800px;
   background-color: white;
   text-align: center;
-  max-width: 74%;
   font-size: calc(10px + 0.390625vw);
+  max-width: 74%;
 }
 .imgCV{
   width: 100%;
@@ -333,18 +333,30 @@ span.padd{
 
 
 /* contact me css*/
+#ff{
+  display: flex;
+  flex-wrap: wrap;
+}
 fieldset{
+  max-width: 80%;
+  margin-bottom: 50px;
   width: 500px;
-  min-height: 800px;
+  max-height: 800px;
   background-color: #4bc497;
   color: rgb(118, 10, 135);
   font-weight: bold;
-  font-size: 1.4vw;
-  margin-right: 50px;
+  font-size: calc(10px + 0.390625vw);
+}
+@media screen and (max-width:1000px){
+  fieldset{
+    max-width: 50%;
+  }
 }
 label, input{
-  font-size: 1.4vw;
   margin: 10px 0px 10px 0px;
+}
+input{
+  max-width: 230px;
 }
 fieldset.one{
   float: left;
@@ -355,7 +367,7 @@ fieldset.two{
 legend{
   background-color: antiquewhite;
   color: blueviolet;
-  font-size: large;
+  font-size: calc(15px + 0.390625vw);
 }
 .buttons{
   background-color: brown;
@@ -365,6 +377,9 @@ legend{
 /* contact me css*/
 .bold{
   font-weight: bolder;
+}
+.form.two{
+
 }
 
 /* Project Page CSS */
@@ -439,16 +454,6 @@ legend{
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 /* Number text (1/3 etc) */
 .numbertext {

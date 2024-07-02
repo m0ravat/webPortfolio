@@ -5,12 +5,18 @@ body{
     position: relative;
 }
 
+@media screen and (max-width:328px){
+  #bottomInfo{
+    font-size: calc(12px + 0.390625vw);
+
+  }
+}
 #bottomInfo{
   background-color: #000000;
   color: yellow;
-  font-size: calc(13px + 0.390625vw);
   margin-top: 0;
   justify-content: space-between;
+  font-size: calc(9px + 0.390625vw);
   padding: 0px 50px 100px 50px;
   a{
     color: yellow;
@@ -217,7 +223,8 @@ footer:hover{
 .boximg{
   height: 300px;
   max-width: 99%;
-  margin: 2%;
+  margin: auto;
+  margin-top: 2%;
 }
 
 .text{
@@ -305,21 +312,25 @@ span.padd{
     margin: 0;
     border: 0;
     padding: 0;
+    min-height: 1px;
+    max-height: 10px;
   }
   .resume#content{
     height: 1px;
   }
 }
-
+#content{
+  justify-content: space-around;
+}
 .board{
   min-height: 300px;
   text-align: center;
   padding: 1%;
   font-size: calc(12px + 0.390625vw);
   padding-left: 4%;
-  width: 500px;
+  width: 80%;
   background-color: rgb(62, 27, 27);
-  margin: 0 1% 1% 1%;
+  margin: auto;
   p{
     text-align: start;
   }
@@ -328,6 +339,19 @@ span.padd{
   .board{
     max-width: 75%;
   }
+}
+@media screen and (max-width:600px){
+  .board{
+    min-width: 310px;
+    margin: auto;
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width:330px) {
+  .board{
+    font-size: calc(10px + 0.390625vw);
+  }
+  
 }
 /* About me CSS*/
 
@@ -378,19 +402,16 @@ legend{
 .bold{
   font-weight: bolder;
 }
-.form.two{
-
-}
 
 /* Project Page CSS */
 .projectBox{
-  height: 430px;
   width: 300px;
   border: 3px solid #2fdcec;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   margin: 5px;
-
+  margin-left: auto;
+  margin-right: auto;
 
 }
 .projectImg{
@@ -405,12 +426,13 @@ legend{
 .projectText{
   width: 98%;
   margin: auto;
-  min-height: 200px;
-  font-size: 16px;
+  padding: 0% 5% 2%;
+  font-size: calc(10px + 0.390625vw);
   font-weight: 500;
   overflow: hidden;
   color: #000000;
 }
+
 /* Project Page CSS */
 
 

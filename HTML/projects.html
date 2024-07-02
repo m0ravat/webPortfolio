@@ -46,13 +46,13 @@
         <div class="box" id="topbox">
             <div class="projectBox">
                 <div class="projectImg">
-                    <img src="/Media/pythonImg.jpeg" alt="">
+                    <img src="/Media/portfolioImg.jpeg" alt="">
                 </div>
                 <div class="projectText">
-                    This is a project done in python for a password generator. It generates a 12 character password, randomly choosing 
-                    from a selection of characters, numbers and letters. It combines various basic
-                    concepts to demonstrate my skills cultivated in university. For more information
-                    please click <a href="/Projects/password.html">here.</a>
+                    This is for my current website, which I decided to make to show off skills that I have learnt. 
+                    This is the longest project I have pursued and it has really challenged my skills. It is my hope to
+                    keep building on to this.
+                    For more information click <a href="/Projects/portfolio.html">here.</a>
                 </div>
             </div>
             <div class="projectBox">
@@ -77,13 +77,13 @@
             </div>
             <div class="projectBox">
                 <div class="projectImg">
-                    <img src="/Media/portfolioImg.jpeg" alt="">
+                    <img src="/Media/pythonImg.jpeg" alt="">
                 </div>
                 <div class="projectText">
-                    This is for my current website, which I decided to make to show off skills that I have learnt. 
-                    This is the longest project I have pursued and it has really challenged my skills. It is my hope to
-                    keep building on to this.
-                    For more information click <a href="/Projects/portfolio.html">here.</a>
+                    This is a project done in python for a password generator. It generates a 12 character password, randomly choosing 
+                    from a selection of characters, numbers and letters. It combines various basic
+                    concepts to demonstrate my skills cultivated in university. For more information
+                    please click <a href="/Projects/password.html">here.</a>
                 </div>
             </div>
         </div>
@@ -123,30 +123,30 @@
         </div>
         <footer id="footer">
             <label for="cursors" class="customization" id="CursorOptions">Cursors:   
-                <select name="cursor" id="cursors" onchange="cursorChange()" class="selecT">
+                <select name="cursor" id="cursors" class="selecT" onchange="saveSelection('cursors')">
                     <option value="default">Default Cursor</option>
-                    <option value="bluesaber">BlueSaber</option>
-                    <option value="redsaber">RedSaber</option>
-                    <option value="Fist">Electric Fist</option>
-                    <option value="Pointer">Pointer</option>
-                    <option value="RedHand">Red Hand</option>
-                    <option value="whitec">White car</option>
-                    <option value="redc">Red Car</option>
-                    <option value="purplec">Purple Car</option>
+                    <option value="blueSaber">BlueSaber</option>
+                    <option value="redSaber">RedSaber</option>
+                    <option value="electricFist">Electric Fist</option>
+                    <option value="pointer">Pointer</option>
+                    <option value="redHand">Red Hand</option>
+                    <option value="whiteCar">White Car</option>
+                    <option value="redCar">Red Car</option>
+                    <option value="purpleCar">Purple Car</option>
                     <option value="gun">Gun</option>
                 </select>
             </label><br>
             <label for="themes" class="customization" id="ThemeOptions">Themes: 
-                <select name="theme" id="themes" class="selecT">
-                    <option value="">Blue Theme</option>
-                    <option value="">Black/white</option>
-                    <option value="">Green</option>
-                    <option value="">Red</option>
-                    <option value="">Orange</option>
-                    <option value="">Purple</option>
-                    <option value="">Pink</option>
-            </select>
-        </label>
+                <select name="theme" id="themes" class="selecT" onchange="saveSelection('themes')">
+                    <option value="blueTheme">Blue Theme</option>
+                    <option value="blackWhite">Black/White</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                </select>
+            </label>
     </footer>
     <script src="/JS/logic.js"></script>
 </body>

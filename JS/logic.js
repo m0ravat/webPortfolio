@@ -13,6 +13,30 @@ var cursor = document.getElementById("cursors");
 var title = document.getElementById("navTitle");
 var cursors = document.getElementById("CursorOptions");
 var themes = document.getElementById("ThemeOptions");
+var theme = document.getElementById("themes");
+let index = document.getElementById("cursors");
+let index1 = document.getElementById("cursors").selectedIndex;
+let theme1=document.getElementById("themes").selectedIndex;
+                // Save the selected value to local storage
+                function saveSelection(id) {
+                    var select = document.getElementById(id);
+                    localStorage.setItem(id, select.value);
+                }
+        
+                // Retrieve the selected value from local storage
+                function loadSelection(id) {
+                    var select = document.getElementById(id);
+                    var savedValue = localStorage.getItem(id);
+                    if (savedValue) {
+                        select.value = savedValue;
+                    }
+                }
+        
+                // Load the saved values when the page loads
+                document.addEventListener('DOMContentLoaded', function() {
+                    loadSelection('cursors');
+                    loadSelection('themes');
+                });
 
 function menuclick() {
     if (count % 2 == 1) {
@@ -39,17 +63,37 @@ function menuclick() {
     count++;
 }
 
-function darkclick(){
+function darkclick() {
     dcount++;
-    if (dcount % 2 == 1){
-        document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
+    if (dcount % 2 == 1) {
+        document.body.style.backgroundImage = "url('/Media/darkbg.jpg')";
         themeDark();
-    }else{
-        document.body.style.backgroundImage="url('/Media/whitebg.png')";
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        document.body.style.backgroundImage = "url('/Media/whitebg.png')";
         themeLight();
+        localStorage.setItem('darkMode', 'disabled');
     }
 }
-function load(){
+
+// Load the saved values when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    loadSelection('cursors');
+    loadSelection('themes');
+
+    // Load dark/light mode state
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled' || darkMode === null) {
+        document.body.style.backgroundImage = "url('/Media/darkbg.jpg')";
+        themeDark();
+        dcount = 1;  // Ensure dcount starts at an odd number
+    } else {
+        document.body.style.backgroundImage = "url('/Media/whitebg.png')";
+        themeLight();
+        dcount = 0;  // Ensure dcount starts at an even number
+    }
+});
+function animateEffect(){
     setTimeout(function(){document.getElementById("topbox").style.visibility="visible";}, 400);
     setTimeout(function(){document.getElementById("topbox").style.left="0";}, 400);
     setTimeout(function(){document.getElementById("topnav").style.visibility="visible";}, 200);
@@ -66,14 +110,13 @@ function load(){
     setTimeout(function(){document.getElementById("CursorOptions").style.left="0";}, 200);
     setTimeout(function(){document.getElementById("bottomInfo").style.visibility="visible";}, 800);
     setTimeout(function(){document.getElementById("bottomInfo").style.left="0";}, 800);
-
-
     setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
     setTimeout(function(){document.getElementById("content").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("bottomInfo").style.position="static";}, 1200);
-
-
+}
+function load(){
+    animateEffect();
     if(dcount%2 ==1){
         document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
         themeDark();
@@ -82,11 +125,14 @@ function load(){
         document.body.style.backgroundImage="url('/Media/whitebg.png')";
         themeLight();
     }
-
-
+    cursorChange(index1);
+    changeColour(theme1);
 }
+
+document.getElementById("cursors").addEventListener("change",cursorChange);
+document.getElementById("themes").addEventListener("change",changeColour);
 function cursorChange(){
-    let index = document.getElementById("cursors").selectedIndex;
+    index = document.getElementById("cursors").selectedIndex;
     switch(index){
         case 0:
             document.body.style.cursor="auto";
@@ -120,8 +166,6 @@ function cursorChange(){
             break;
     }
 }
-
-document.getElementById("themes").addEventListener("change",changeColour);
 function changeColour(){
     if (dcount % 2 ==1){
         themeDark();

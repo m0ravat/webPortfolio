@@ -84,7 +84,7 @@
                     Software/Tools : <br>
                      - NetBeans/IntelliJ IDEA (Java) <br>
                      - Python IDE <br>
-                     - Visual Studio Code (Python/WebDev(HTML/CSS/JS)) <br>
+                     - Visual Studio Code (Python/(HTML/CSS/JS)) <br>
                      - Vercel (web deployment) <br> 
                      - GitHub (Version control) <br> <br>
                     Websites used for design : <br>
@@ -254,30 +254,30 @@
     </div>
     <footer id="footer">
         <label for="cursors" class="customization" id="CursorOptions">Cursors:   
-            <select name="cursor" id="cursors" onchange="cursorChange()" class="selecT">
+            <select name="cursor" id="cursors" class="selecT" onchange="saveSelection('cursors')">
                 <option value="default">Default Cursor</option>
-                <option value="bluesaber">BlueSaber</option>
-                <option value="redsaber">RedSaber</option>
-                <option value="Fist">Electric Fist</option>
-                <option value="Pointer">Pointer</option>
-                <option value="RedHand">Red Hand</option>
-                <option value="whitec">White car</option>
-                <option value="redc">Red Car</option>
-                <option value="purplec">Purple Car</option>
+                <option value="blueSaber">BlueSaber</option>
+                <option value="redSaber">RedSaber</option>
+                <option value="electricFist">Electric Fist</option>
+                <option value="pointer">Pointer</option>
+                <option value="redHand">Red Hand</option>
+                <option value="whiteCar">White Car</option>
+                <option value="redCar">Red Car</option>
+                <option value="purpleCar">Purple Car</option>
                 <option value="gun">Gun</option>
             </select>
         </label><br>
         <label for="themes" class="customization" id="ThemeOptions">Themes: 
-            <select name="theme" id="themes" class="selecT">
-                <option value="">Blue Theme</option>
-                <option value="">Black/white</option>
-                <option value="">Green</option>
-                <option value="">Red</option>
-                <option value="">Orange</option>
-                <option value="">Purple</option>
-                <option value="">Pink</option>
-        </select>
-    </label>
+            <select name="theme" id="themes" class="selecT" onchange="saveSelection('themes')">
+                <option value="blueTheme">Blue Theme</option>
+                <option value="blackWhite">Black/White</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+                <option value="pink">Pink</option>
+            </select>
+        </label>
 </footer>
 <script src="/JS/logic.js"></script>
 </body>

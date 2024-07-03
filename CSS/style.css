@@ -415,14 +415,41 @@ legend{
 }
 
 /* Project Page CSS */
+.grid{
+  display: grid;
+  column-gap: 30px;
+  row-gap: 10px;
+  grid-template: max-content  / max-content max-content max-content max-content;
+}
+@media screen and (min-width:1031px ) and (max-width:1380px) {
+  .grid{
+    grid-template: max-content / max-content max-content max-content;
+  }
+}
+@media screen and (max-width:1030px){
+  .grid{
+    grid-template-columns: max-content max-content;
+  }
+}
+@media screen and (max-width:682px){
+  .grid{
+    margin: auto;
+    grid-template: max-content / max-content;
+  }
+}
+@media screen and (max-width:332px){
+  .projectBox{
+    width: 280px;
+  }
+}
 .projectBox{
-  width: 300px;
+  max-height: 500px;
+  max-width: 300px;
   border: 3px solid #2fdcec;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   margin: 5px;
   margin-left: auto;
-  margin-right: auto;
 
 }
 .projectImg{
@@ -480,3 +507,4 @@ legend{
   max-width: 450px;
   margin-top: 30px;
 }
+

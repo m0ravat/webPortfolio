@@ -17,26 +17,26 @@ var theme = document.getElementById("themes");
 let index = document.getElementById("cursors");
 let index1 = document.getElementById("cursors").selectedIndex;
 let theme1=document.getElementById("themes").selectedIndex;
-                // Save the selected value to local storage
-                function saveSelection(id) {
-                    var select = document.getElementById(id);
-                    localStorage.setItem(id, select.value);
-                }
+// Save the selected value to local storage
+function saveSelection(id) {
+    var select = document.getElementById(id);
+    localStorage.setItem(id, select.value);
+}
         
-                // Retrieve the selected value from local storage
-                function loadSelection(id) {
-                    var select = document.getElementById(id);
-                    var savedValue = localStorage.getItem(id);
-                    if (savedValue) {
-                        select.value = savedValue;
-                    }
-                }
+// Retrieve the selected value from local storage
+function loadSelection(id) {
+    var select = document.getElementById(id);
+    var savedValue = localStorage.getItem(id);
+    if (savedValue) {
+        select.value = savedValue;
+    }
+}
         
-                // Load the saved values when the page loads
-                document.addEventListener('DOMContentLoaded', function() {
-                    loadSelection('cursors');
-                    loadSelection('themes');
-                });
+// Load the saved values when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    loadSelection('cursors');
+    loadSelection('themes');
+});
 
 function menuclick() {
     if (count % 2 == 1) {
@@ -66,11 +66,11 @@ function menuclick() {
 function darkclick() {
     dcount++;
     if (dcount % 2 == 1) {
-        document.body.style.backgroundImage = "url('/Media/darkbg.jpg')";
+        document.body.style.backgroundImage = "url('/Media/Backgrounds/polygon-scatter-haikei (1).svg')";
         themeDark();
         localStorage.setItem('darkMode', 'enabled');
     } else {
-        document.body.style.backgroundImage = "url('/Media/whitebg.png')";
+        document.body.style.backgroundImage = "url('/Media/Backgrounds/polygon-scatter-haikei (2).svg')";
         themeLight();
         localStorage.setItem('darkMode', 'disabled');
     }
@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load dark/light mode state
     const darkMode = localStorage.getItem('darkMode');
     if (darkMode === 'enabled' || darkMode === null) {
-        document.body.style.backgroundImage = "url('/Media/darkbg.jpg')";
+        document.body.style.backgroundImage = "url('/Media/Backgrounds/polygon-scatter-haikei (1).svg')";
         themeDark();
         dcount = 1;  // Ensure dcount starts at an odd number
     } else {
-        document.body.style.backgroundImage = "url('/Media/whitebg.png')";
+        document.body.style.backgroundImage = "url('/Media/Backgrounds/polygon-scatter-haikei (2).svg')";
         themeLight();
         dcount = 0;  // Ensure dcount starts at an even number
     }
@@ -117,16 +117,6 @@ function animateEffect(){
 }
 function load(){
     animateEffect();
-    if(dcount%2 ==1){
-        document.body.style.backgroundImage="url('/Media/darkbg.jpg')";
-        themeDark();
-    }
-    else{
-        document.body.style.backgroundImage="url('/Media/whitebg.png')";
-        themeLight();
-    }
-    cursorChange(index1);
-    changeColour(theme1);
 }
 
 document.getElementById("cursors").addEventListener("change",cursorChange);

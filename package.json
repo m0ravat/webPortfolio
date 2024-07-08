@@ -1,0 +1,15 @@
+{
+  "name": "webportfolio",
+  "version": "1.0.0",
+  "description": "This is my web portfolio. It is made by me and the purpose is to showcase my web development abilities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

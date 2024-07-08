@@ -36,20 +36,20 @@ h1{
 
 
 /*Animation css */
-#topbox, #aboutme, #resume, #forms, #content, #bottomInfo{
+#topbox, #aboutme, #resume, #forms, #cc, #bottomInfo{
   visibility: hidden;
   position: relative;
   transition: left 0.5s ease; 
 }
 
-#topbox, #aboutme, #resume,  #forms, #content, #bottomInfo{
+#topbox, #aboutme, #resume,  #forms, #cc, #bottomInfo{
   left: -100%; 
 }
 /*Animation css */
 
 
 /*Navbar CSS */
-header {
+header{
   position: fixed;
   min-height: 60px;
   max-height: 80px;
@@ -66,9 +66,15 @@ float: left;
 }
 .topnav-left{
   max-height: 70px;
+  width: 60%;
 }
 .topnav-right{
   max-height: 70px;
+  float: right;
+  width: 40%;
+}
+.topnav-right .button{
+  float: right;
 }
 
 .material-symbols-outlined{
@@ -83,19 +89,11 @@ margin-top: 2px;
 color: transparent;
 }
 
-#navTitle{
-color: black;
-margin-left: 5%;
-margin-right: 3%;
-margin-top: auto;
-margin-bottom: auto;
-font-size: calc(11px + 0.390625vw);
-}
 .button{
 text-align: center;
 padding-top: 15px;
 text-decoration: none;
-width: 13%;
+width: 20%;
 border: 0px;
 background-color: transparent;
 color: rgb(255, 255, 255);
@@ -131,14 +129,7 @@ color: rgb(0, 0, 0);
   background-color: white;
 }
 }
-a.active {
-  color: #000000;
-  .icon-text{
-    color: rgb(0, 0, 0);
-    background-color: white;
-    font-weight: bold;
-  }
-}
+
 .selecT{
 font-size: large;
 float: right;
@@ -165,8 +156,11 @@ footer:hover{
 
 /*Box CSS*/
 .content{
-  padding-top: 90px;
+  padding-top: 120px;
   overflow: hidden;
+}
+#topbox{
+  padding-top: 40px;
 }
 
 .box{

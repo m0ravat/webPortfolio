@@ -10,7 +10,6 @@ var user = document.getElementById("userpImg");
 var active = document.getElementById("active");
 var topbox = document.getElementById("topbox");
 var cursor = document.getElementById("cursors");
-var title = document.getElementById("navTitle");
 var cursors = document.getElementById("CursorOptions");
 var themes = document.getElementById("ThemeOptions");
 var theme = document.getElementById("themes");
@@ -31,11 +30,17 @@ function loadSelection(id) {
         select.value = savedValue;
     }
 }
-        
+import { loadHome, loadAbout, loadProject, loadContact } from "./load.js";
+document.getElementById("navHome").addEventListener('click',function(){
+    loadHome();
+});
 // Load the saved values when the page loads
 document.addEventListener('DOMContentLoaded', function() {
+    loadHome();
+    animateEffect();
     loadSelection('cursors');
     loadSelection('themes');
+
 });
 
 function menuclick() {
@@ -46,7 +51,6 @@ function menuclick() {
             darkmode.style.visibility="hidden";
             cursors.style.visibility="hidden";
             themes.style.visibility="hidden";
-            document.getElementById("navTitle").style.visibility="hidden";
         }
         navbar.style.opacity="0.5";
     }else{
@@ -56,7 +60,6 @@ function menuclick() {
             darkmode.style.visibility="visible";;
             cursors.style.visibility="visible";
             themes.style.visibility="visible";
-            document.getElementById("navTitle").style.visibility="visible";
         }
         navbar.style.opacity="1";
     }
@@ -75,7 +78,6 @@ function darkclick() {
         localStorage.setItem('darkMode', 'disabled');
     }
 }
-
 // Load the saved values when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     loadSelection('cursors');
@@ -105,14 +107,14 @@ function animateEffect(){
     setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("projects").style.visibility="visible";}, 800);
     setTimeout(function(){document.getElementById("projects").style.left="0";}, 800);
-    setTimeout(function(){document.getElementById("content").style.visibility="visible";}, 800);
-    setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("cc").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("cc").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("CursorOptions").style.visibility="visible";}, 200);
     setTimeout(function(){document.getElementById("CursorOptions").style.left="0";}, 200);
     setTimeout(function(){document.getElementById("bottomInfo").style.visibility="visible";}, 800);
     setTimeout(function(){document.getElementById("bottomInfo").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
-    setTimeout(function(){document.getElementById("content").style.position="static";}, 1200);
+    setTimeout(function(){document.getElementById("cc").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("bottomInfo").style.position="static";}, 1200);
 }
@@ -165,7 +167,6 @@ function changeColour(){
 }
 
 function themeLight(){
-    document.getElementById("navTitle").style.color="white";
     let optionval = document.getElementById("themes").selectedIndex;
     switch(optionval){
         case 0:
@@ -206,8 +207,6 @@ function themeLight(){
 
 
 function themeDark(){
-    document.getElementById("navTitle").style.color="black";
-
     let optionval = document.getElementById("themes").selectedIndex;
     switch(optionval){
         case 0:

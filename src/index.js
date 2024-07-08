@@ -33,14 +33,25 @@ function loadSelection(id) {
 import { loadHome, loadAbout, loadProject, loadContact } from "./load.js";
 document.getElementById("navHome").addEventListener('click',function(){
     loadHome();
+    animateEffect();
+});
+document.getElementById("navAbout").addEventListener('click',function(){
+    loadAbout();
+    animateEffect();
+    showSlides(1);
+});
+document.getElementById("navProject").addEventListener('click',function(){
+    loadProject();
+    animateEffect();
+});
+document.getElementById("navContact").addEventListener('click',function(){
+    loadContact();
+    animateEffect();
 });
 // Load the saved values when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     loadHome();
     animateEffect();
-    loadSelection('cursors');
-    loadSelection('themes');
-
 });
 
 function menuclick() {
@@ -81,6 +92,8 @@ function darkclick() {
 // Load the saved values when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     loadSelection('cursors');
+    cursorChange();
+
     loadSelection('themes');
     animateEffect();
 
@@ -119,9 +132,10 @@ function animateEffect(){
     setTimeout(function(){document.getElementById("bottomInfo").style.position="static";}, 1200);
 }
 
-
+cursors.addEventListener('change', function() {
+    saveSelection('cursors');
+});
 document.getElementById("cursors").addEventListener("change",cursorChange);
-document.getElementById("themes").addEventListener("change",changeColour);
 function cursorChange(){
     index = document.getElementById("cursors").selectedIndex;
     switch(index){
@@ -157,6 +171,13 @@ function cursorChange(){
             break;
     }
 }
+
+themes.addEventListener('change', function() {
+    saveSelection('themes');
+});
+document.getElementById("themes").addEventListener("change",changeColour);
+
+
 function changeColour(){
     if (dcount % 2 ==1){
         themeDark();

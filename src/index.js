@@ -135,11 +135,11 @@ function menuclick() {
 function darkclick() {
     dcount++;
     if (dcount % 2 == 1) {
-        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/polygon-scatter-haikei (1).svg')";
+        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/dark.svg')";
         themeDark();
         localStorage.setItem('darkMode', 'enabled');
     } else {
-        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/polygon-scatter-haikei (2).svg')";
+        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/light.svg')";
         themeLight();
         localStorage.setItem('darkMode', 'disabled');
     }
@@ -155,11 +155,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load dark/light mode state
     const darkMode = localStorage.getItem('darkMode');
     if (darkMode === 'enabled' || darkMode === null) {
-        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/polygon-scatter-haikei (1).svg')";
+        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/dark.svg')";
         themeDark();
         dcount = 1;  // Ensure dcount starts at an odd number
     } else {
-        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/polygon-scatter-haikei (2).svg')";
+        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/light.svg')";
         themeLight();
         dcount = 0;  // Ensure dcount starts at an even number
     }

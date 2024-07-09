@@ -115,7 +115,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
+menu.addEventListener('click',menuclick);
+darkmode.addEventListener('click',darkclick)
 function menuclick() {
     if (count % 2 == 1) {
         for (var i = 0; i < buttons.length; i++) {

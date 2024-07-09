@@ -5,17 +5,9 @@ let count = 1;
 let dcount = 1;
 var footer = document.getElementById("footer");
 var darkmode = document.getElementById("darkmode");
-var icon = document.querySelectorAll("icon-text");
-var user = document.getElementById("userpImg");
-var active = document.getElementById("active");
-var topbox = document.getElementById("topbox");
-var cursor = document.getElementById("cursors");
 var cursors = document.getElementById("CursorOptions");
 var themes = document.getElementById("ThemeOptions");
-var theme = document.getElementById("themes");
 let index = document.getElementById("cursors");
-let index1 = document.getElementById("cursors").selectedIndex;
-let theme1=document.getElementById("themes").selectedIndex;
 // Save the selected value to local storage
 function saveSelection(id) {
     var select = document.getElementById(id);
@@ -73,7 +65,7 @@ document.getElementById("navHome").addEventListener('click', function() {
 
 document.getElementById("navAbout").addEventListener('click', function() {
     loadAbout();
-    setTimeout(animateEffect, 0);
+    setTimeout(animateEffect);
     window.showSlides(1);  // Ensure first slide is shown after loadAbout
     setCurrentTab('about');
 });
@@ -96,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     switch (currentTab) {
         case 'about':
             loadAbout();
-            setTimeout(animateEffect, 0);
+            setTimeout(animateEffect);
             window.showSlides(1);
             break;
         case 'project':

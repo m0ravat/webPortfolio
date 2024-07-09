@@ -36,13 +36,13 @@ h1{
 
 
 /*Animation css */
-#topbox, #aboutme, #resume, #forms, #cc, #bottomInfo{
+#topbox, #aboutme, #resume, #forms, #cc,#c, #bottomInfo{
   visibility: hidden;
   position: relative;
   transition: left 0.5s ease; 
 }
 
-#topbox, #aboutme, #resume,  #forms, #cc, #bottomInfo{
+#topbox, #aboutme, #resume,  #forms, #cc,#c, #bottomInfo{
   left: -100%; 
 }
 /*Animation css */

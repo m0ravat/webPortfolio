@@ -1,3 +1,5 @@
+
+
 export function loadHome(){
     document.getElementById("content").innerHTML=`
     <div class="box" id="topbox">
@@ -29,177 +31,177 @@ export function loadHome(){
     </div>
     `;
 }
-export function loadAbout(){
-    document.getElementById("content").innerHTML=`
+export function loadAbout() {
+    document.getElementById("content").innerHTML = `
         <div class="box" id="topbox">
-        <p>
+            <p>
                 Hi. I am an aspiring backend engineer currently working on my frontend skills. To showcase this I have made a resume purely
                 from HTML & CSS (only available on landscape or wide resolution) and a slideshow for you mobile users. 
-        </p>
-    </div>
-    <div class="box" id="content">
-        <div class="slideshow-container"> 
-            <div style="text-align:center">
-                <span class="dot" id="dot1"></span>
-                <span class="dot" id="dot2"span>
-                <span class="dot" id="dot3"></span>
+            </p>
+        </div>
+        <div class="box" id="c">
+            <div class="slideshow-container"> 
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <div class="mySlides fade">
+                    <div class="board">
+                        <h1>My interest in technology</h1>
+                        <p>
+                            I have been interested in technology since secondary school where I began pseudocode. I proceeded 
+                            to code in visual basic during college, and in university Python/Java and HTML/CSS/JS. I aspire to be a backend 
+                            programmer as that is where my preference lies, but I am developing my front end skills to Show
+                            off my skills to employers like through this portfolio. I am planning on continuing on The Odin Project to learn more
+                            about web development and pick up front end technologies like React/TailWind and then move onto the server side. 
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="board">
+                    <h1>Tools I use</h1>
+                    <p>
+                        Coding Languages : <br>
+                        - Python <br>
+                        - Java <br>
+                        - HTML/CSS/JS <br> <br>
+                        Software/Tools : <br>
+                        - NetBeans/IntelliJ IDEA (Java) <br>
+                        - Python IDE <br>
+                        - Visual Studio Code (Python/(HTML/CSS/JS)) <br>
+                        - Vercel (web deployment) <br> 
+                        - GitHub (Version control) <br> <br>
+                        Websites used for design : <br>
+                        - Google Icons/fontawesome/SVGRepo (icons) <br>
+                        - Google Fonts (Font) <br> <br>
+                        Online BootCamps/Resources : <br>
+                        - w3schools (basic concepts) <br>
+                        - HackerRank (Test my knowledge) <br>
+                        - The Odin Project (Current)
+                    </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="board"> 
+                        <h1>Main Projects</h1>
+                        <p>
+                            Python - Random Password Generator <br>
+                            Generates a random password of 12 characters featuring the use of uppercase/lowercase letters, numbers and 
+                            special characters. <br> <br>
+                            Java - Module Enrolment System <br>
+                            Allows students to enrol in a module, featuring 5 through the use of object oriented programming. <br> <br>
+                            HTML/CSS - Personal Portfolio <br> 
+                            Created a portfolio to showcase my skills and increase employability skills.  <br> <br>
+                            JavaScript - Calculator Project <br>
+                            Two function calculator that does basic arithmetic and finds the degree outcome of a UG university student. 
+                            Uses input validation and string manipulation
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="mySlides fade">
-              <div class="board">
-                <h1>My interest in technology</h1>
-                <p>
-                    I have been interested in technology since secondary school where I began pseudocode. I proceeded 
-                    to code in visual basic during college, and in university Python/Java and HTML/CSS/JS. I aspire to be a backend 
-                    programmer as that is where my preference lies, but I am developing my front end skills to Show
-                    off my skills to employers like through this portfolio. I am planning on continuing on The Odin Project to learn more
-                    about web development and pick up front end technologies like React/TailWind and then move onto the server side. 
-                </p>
-              </div>
-            </div>
-            <div class="mySlides fade">
-              <div class="board">
-                <h1>Tools I use</h1>
-                <p>
-                    Coding Languages : <br>
-                     - Python <br>
-                     - Java <br>
-                     - HTML/CSS/JS <br> <br>
-                    Software/Tools : <br>
-                     - NetBeans/IntelliJ IDEA (Java) <br>
-                     - Python IDE <br>
-                     - Visual Studio Code (Python/(HTML/CSS/JS)) <br>
-                     - Vercel (web deployment) <br> 
-                     - GitHub (Version control) <br> <br>
-                    Websites used for design : <br>
-                     - Google Icons/fontawesome/SVGRepo (icons) <br>
-                     - Google Fonts (Font) <br> <br>
-                    Online BootCamps/Resources : <br>
-                    - w3schools (basic concepts) <br>
-                    - HackerRank (Test my knowledge) <br>
-                    - The Odin Project (Current)
-                </p>
-              </div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div class="board"> 
-                <h1>Main Projects</h1>
-                <p>
-                    Python - Random Password Generator <br>
-                    Generates a random password of 12 characters featuring the use of uppercase/lowercase letters, numbers and 
-                    special characters. <br> <br>
-                    Java - Module Enrolment System <br>
-                    Allows students to enrol in a module, featuring 5 through the use of object oriented programming. <br> <br>
-                    HTML/CSS - Personal Portfolio <br> 
-                    Created a portfolio to showcase my skills and increase employability skills.  <br> <br>
-                    JavaScript - Calculator Project <br>
-                    Two function calculator that does basic arithmetic and finds the degree outcome of a UG university student. 
-                    Uses input validation and string manipulation
-                </p>
-              </div>
+            <div class="resume">
+                <div class="leftCV">
+                    <img src="/Media/AboutMeImg/CVimg.jpeg" alt="" class="imgCV">
+                    <div class="bioCV">
+                        <span class="material-symbols-outlined padd">person</span>
+                        Muhammad Ravat <br> <br>
+                        <span class="material-symbols-outlined padd">apartment</span>
+                        London, UK <br> <br>
+                        <span class="material-symbols-outlined padd">mail</span>
+                        moravat763@gmail.com <br> <br>
+                        <span class="material-symbols-outlined padd">phone_in_talk</span>
+                        07769004379 <br> <br>
+                        <span class="material-symbols-outlined padd">language</span>
+                        Languages
+                        <p class="leftP">• English <br>
+                            • Gujarati
+                        </p>
+                        <span class="material-symbols-outlined padd">grade</span> 
+                        Coding Languages
+                        <p class="leftP">
+                            • Python <br>
+                            • Java <br>
+                            • HTML/CSS/JS 
+                        </p>
+                        <span class="material-symbols-outlined padd">laptop_mac</span>
+                        Software/Tools used
+                        <p class="leftP">
+                            • IntelliJ <br>
+                            • Python IDE <br>
+                            • Visual Studio Code <br>
+                            • Vercel <br>
+                            • GitHub <br>
+                            • Google Icons <br>
+                            • Google Fonts <br>
+                            • FontAwesome <br>
+                            • SVG Repo 
+                        </p>
+                    </div>
+                </div>
+                <div class="rightCV">
+                    <div class="section" style="overflow: hidden; height: auto;"> 
+                        <h1>About Me</h1>
+                        <p class="black">
+                            I am an aspiring software engineer based in East London who wants to become a backend engineer. 
+                            I plan to do this by trying to secure an internship and improving my portfolio so I can gain 
+                            relevant knowledge and experience. 
+                        </p>
+                    </div>
+                    <div class="section">
+                        <h1>Key Skills</h1>
+                        <p class="black">
+                            ● Communicating within a team - I was part of a student council with 20+ other form representatives and
+                            multiple teachers. <br>
+                            ● Time management skills - Had to balance 3 university level courseworks and 1 test during Ramadan
+                            where I had to fast throughout the whole day. <br>
+                            ● Proactive mindset - One duty as a form representative included reaching out to students and asking their
+                            opinion. <br>
+                            ● Leadership - Was part of a group project where I was key in making sure everyone knew what to do and I
+                            had a template set up for everyone. <br>
+                        </p>
+                    </div>
+                    <div class="section"> 
+                        <h1>Experience</h1>
+                        <p class="black">
+                            Form Representative at Langdon Academy (Duration : 1 Academic Year) <br>
+                            General description : Part of a student council of 20+ students within the year group and members of faculty, for
+                            the purpose of improving the school experience
+                        </p>
+                    </div>
+                    <div class="section"> 
+                        <h1>Education History</h1>
+                        <p class="black">
+                            Langdon Academy | 2016 - 2021 <br> 
+                            11 GCSEs Grades 8-4 including English Language (7), Maths (7), Computer Science (8) <br> <br>
+        
+                            Newham Sixth Form College (Newvic) | 2021 - 2023 <br> 
+                            A Levels in Computer Science (D), Economics (C) and Psychology (C) <br> <br>
+        
+                            University of Westminster | 2023 - Current <br> 
+                            Bachelor of Engineering (BEng) Degree in Software Engineering <br>
+                            1st year average mark - 72% (1st Class Honours) <br>
+                            2nd year average mark - TBA <br>
+                            Predicted/Final Degree - TBA/TBA
+                        </p>
+                    </div> 
+                    <div class="section">
+                        <h1>Projects</h1>
+                        <p class="black">
+                            Personal Portfolio (April 2024 - Current) - Created a personal portfolio and uploaded it using vercel to
+                            show off my coding skills and improve my web development skills. <br>
+                            Module Intake System (June 2024 - June 2024) - Created a 3 class program in Java to allow students to book what 
+                            module they would like to join and other features. <br>
+                            Calculator App - 2 function calculator designed to do basic arithmetic and calculate the degree of an
+                            undergraduate student in HTML/CSS/JS.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="resume">
-            <div class="leftCV">
-                <img src="/Media/AboutMeImg/CVimg.jpeg" alt="" class="imgCV">
-                <div class="bioCV">
-                    <span class="material-symbols-outlined padd">person</span>
-                    Muhammad Ravat <br> <br>
-                    <span class="material-symbols-outlined padd">apartment</span>
-                    London, UK <br> <br>
-                    <span class="material-symbols-outlined padd">mail</span>
-                    moravat763@gmail.com <br> <br>
-                    <span class="material-symbols-outlined padd">phone_in_talk</span>
-                    07769004379 <br> <br>
-                    <span class="material-symbols-outlined padd">language</span>
-                    Languages
-                    <p class="leftP">• English <br>
-                        • Gujarati
-                    </p>
-                    <span class="material-symbols-outlined padd">grade</span> 
-                    Coding Languages
-                    <p class="leftP">
-                        • Python <br>
-                        • Java <br>
-                        • HTML/CSS/JS 
-                    </p>
-                    <span class="material-symbols-outlined padd">laptop_mac</span>
-                    Software/Tools used
-                    <p class="leftP">
-                        • IntelliJ <br>
-                        • Python IDE <br>
-                        • Visual Studio Code <br>
-                        • Vercel <br>
-                        • GitHub <br>
-                        • Google Icons <br>
-                        • Google Fonts <br>
-                        • FontAwesome <br>
-                        • SVG Repo 
-                    </p>
-                </div>
-            </div>
-            <div class="rightCV">
-                <div class="section" style="overflow: hidden; height: auto;"> 
-                    <h1>About Me</h1>
-                    <p class="black">
-                        I am an aspiring software engineer based in East London who wants to become a backend engineer. 
-                        I plan to do this by trying to secure an internship and improving my portfolio so I can gain 
-                        relevant knowledge and experience. 
-                    </p>
-                </div>
-                <div class="section">
-                    <h1>Key Skills</h1>
-                    <p class="black">
-                        ● Communicating within a team - I was part of a student council with 20+ other form representatives and
-                        multiple teachers. <br>
-                        ● Time management skills - Had to balance 3 university level courseworks and 1 test during Ramadan
-                        where I had to fast throughout the whole day. <br>
-                        ● Proactive mindset - One duty as a form representative included reaching out to students and asking their
-                        opinion. <br>
-                        ● Leadership - Was part of a group project where I was key in making sure everyone knew what to do and I
-                        had a template set up for everyone. <br>
-                    </p>
-                </div>
-                <div class="section"> 
-                    <h1>Experience</h1>
-                    <p class="black">
-                        Form Representative at Langdon Academy (Duration : 1 Academic Year) <br>
-                        General description : Part of a student council of 20+ students within the year group and members of faculty, for
-                        the purpose of improving the school experience
-                    </p>
-                </div>
-                <div class="section"> 
-                    <h1>Education History</h1>
-                    <p class="black">
-                        Langdon Academy | 2016 - 2021 <br> 
-                        11 GCSEs Grades 8-4 including English Language (7), Maths (7), Computer Science (8) <br> <br>
-    
-                        Newham Sixth Form College (Newvic) | 2021 - 2023 <br> 
-                        A Levels in Computer Science (D), Economics (C) and Psychology (C) <br> <br>
-    
-                        University of Westminster | 2023 - Current <br> 
-                        Bachelor of Engineering (BEng) Degree in Software Engineering <br>
-                        1st year average mark - 72% (1st Class Honours) <br>
-                        2nd year average mark - TBA <br>
-                        Predicted/Final Degree - TBA/TBA
-                    </p>
-                </div> 
-                <div class="section">
-                    <h1>Projects</h1>
-                    <p class="black">
-                        Personal Portfolio (April 2024 - Current) - Created a personal portfolio and uploaded it using vercel to
-                        show off my coding skills and improve my web development skills. <br>
-                        Module Intake System (June 2024 - June 2024) - Created a 3 class program in Java to allow students to book what 
-                        module they would like to join and other features. <br>
-                        Calculator App - 2 function calculator designed to do basic arithmetic and calculate the degree of an
-                        undergraduate student in HTML/CSS/JS.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
     `;
 }
+
 export function loadContact(){
     document.getElementById("content").innerHTML=`
     <div class="box" id="topbox">
@@ -211,7 +213,7 @@ export function loadContact(){
                 If you would like to leave feedback for the website you can do so below: 
             </div>
         </div>
-        <div class="box">
+        <div class="box" id = "c">
             <form action="mailto:moravat763@gmail.com" method="post" enctype="text/plain" id="ff">
                 <fieldset class="form one">
                     <legend>Positive Feedback</legend>

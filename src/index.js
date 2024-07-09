@@ -30,29 +30,91 @@ function loadSelection(id) {
         select.value = savedValue;
     }
 }
+window.slideIndex = 1;
+
+window.currentSlide = function(n) {
+    showSlides(window.slideIndex = n);
+};
+
+// Ensure these functions are globally accessible
+window.slideIndex = 1;
+
+window.currentSlide = function(n) {
+    showSlides(window.slideIndex = n);
+};
+
+window.showSlides = function(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {window.slideIndex = 1}
+    if (n < 1) {window.slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[window.slideIndex-1].style.display = "block";
+    dots[window.slideIndex-1].className += " active";
+};
+
 import { loadHome, loadAbout, loadProject, loadContact } from "./load.js";
-document.getElementById("navHome").addEventListener('click',function(){
+
+function setCurrentTab(tab) {
+    localStorage.setItem('currentTab', tab);
+}
+
+document.getElementById("navHome").addEventListener('click', function() {
     loadHome();
     animateEffect();
+    setCurrentTab('home');
 });
-document.getElementById("navAbout").addEventListener('click',function(){
+
+document.getElementById("navAbout").addEventListener('click', function() {
     loadAbout();
-    animateEffect();
-    showSlides(1);
+    setTimeout(animateEffect, 0);
+    window.showSlides(1);  // Ensure first slide is shown after loadAbout
+    setCurrentTab('about');
 });
-document.getElementById("navProject").addEventListener('click',function(){
+
+document.getElementById("navProject").addEventListener('click', function() {
     loadProject();
     animateEffect();
+    setCurrentTab('project');
 });
-document.getElementById("navContact").addEventListener('click',function(){
+
+document.getElementById("navContact").addEventListener('click', function() {
     loadContact();
     animateEffect();
+    setCurrentTab('contact');
 });
-// Load the saved values when the page loads
+
+// Load the saved tab when the page loads
 document.addEventListener('DOMContentLoaded', function() {
-    loadHome();
-    animateEffect();
+    const currentTab = localStorage.getItem('currentTab') || 'home'; // default to 'home'
+    switch (currentTab) {
+        case 'about':
+            loadAbout();
+            setTimeout(animateEffect, 0);
+            window.showSlides(1);
+            break;
+        case 'project':
+            loadProject();
+            animateEffect();
+            break;
+        case 'contact':
+            loadContact();
+            animateEffect();
+            break;
+        case 'home':
+        default:
+            loadHome();
+            animateEffect();
+            break;
+    }
 });
+
 
 function menuclick() {
     if (count % 2 == 1) {
@@ -120,18 +182,24 @@ function animateEffect(){
     setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("projects").style.visibility="visible";}, 800);
     setTimeout(function(){document.getElementById("projects").style.left="0";}, 800);
-    setTimeout(function(){document.getElementById("cc").style.visibility="visible";}, 800);
-    setTimeout(function(){document.getElementById("cc").style.left="0";}, 800);
+
     setTimeout(function(){document.getElementById("CursorOptions").style.visibility="visible";}, 200);
     setTimeout(function(){document.getElementById("CursorOptions").style.left="0";}, 200);
     setTimeout(function(){document.getElementById("bottomInfo").style.visibility="visible";}, 800);
     setTimeout(function(){document.getElementById("bottomInfo").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
-    setTimeout(function(){document.getElementById("cc").style.position="static";}, 1200);
+    
     setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
     setTimeout(function(){document.getElementById("bottomInfo").style.position="static";}, 1200);
+    
+    setTimeout(function(){document.getElementById("cc").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("cc").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("cc").style.position="static";}, 1200);
+    
+    setTimeout(function(){document.getElementById("c").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("c").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("c").style.position="static";}, 1200);
 }
-
 cursors.addEventListener('change', function() {
     saveSelection('cursors');
 });
@@ -265,26 +333,4 @@ function themeDark(){
             break;
     }
 }
-let slideIndex = 1;
-showSlides(slideIndex);
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}

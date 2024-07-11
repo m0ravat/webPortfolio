@@ -1,4 +1,6 @@
-export function loadHome(){    
+
+export function loadHome(){
+    
     document.getElementById("content").innerHTML=`
     <div class="box" id="topbox">
         <div class="text">
@@ -334,5 +336,4 @@ export function loadProject(){
         </div>
         `;
 }
-
 

@@ -52,6 +52,7 @@ window.showSlides = function(n) {
 };
 
 import { loadHome, loadAbout, loadProject, loadContact } from "./load.js";
+
 function setCurrentTab(tab) {
     localStorage.setItem('currentTab', tab);
 }
@@ -325,12 +326,4 @@ function themeDark(){
             break;
     }
 }
-
-document.getElementById("pass").addEventListener('click',function(){
-    loadProjectsPage();
-    loadPass();
-});
-document.getElementById("").addEventListener('click',loadCalc);
-document.getElementById("").addEventListener('click',loadModule);
-document.getElementById("").addEventListener('click',loadPort);
 

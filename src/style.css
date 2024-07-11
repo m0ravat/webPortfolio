@@ -63,9 +63,8 @@ header{
   border-radius: 15px;
   padding: 5px;
   background-color: #2fdcec;
-  width: 98%;
-  margin-top: 5px;
-  margin-left: 10px;
+  width: 95%;
+  margin: 1dvh 2dvh 0dvh 2dvh;
 }
 .topnav-left .button{
 float: left;
@@ -82,7 +81,20 @@ float: left;
 .topnav-right .button{
   float: right;
 }
-
+@media screen and (max-width:739px){
+  .topnav-right{
+    width: 50%;
+  }
+}
+@media screen and (max-width:568px) {
+  .topnav-right .button{
+    float: left;
+    width: 35%;
+  }
+  .topnav-left .button{
+    width: 20%;
+  }
+}
 .material-symbols-outlined{
 transform: scale(2);
 padding-bottom: 5px;
@@ -118,11 +130,8 @@ min-height: 55px;
     font-weight: bold;
     background-color: chartreuse;
   }
-  h1#navTitle{
-    visibility: hidden;
-    font-size: 1px;
-  }
 }
+
 .black{
   color: #000000;
 }

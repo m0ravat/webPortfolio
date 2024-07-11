@@ -1,8 +1,14 @@
+@font-face {
+  font-family: 'MyFont';
+  src:url('./OpenSans.ttf') format('truetype');
+  font-weight: 500;
+  font-size: 20px;
+}
 body{
-    font-family: "Michroma", sans-serif;
     background-size: cover;
     font-size: calc(15px + 0.390625vw);
     position: relative;
+    font-family: 'MyFont';
 }
 
 .inLine{

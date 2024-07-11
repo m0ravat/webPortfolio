@@ -131,10 +131,6 @@ export function loadAbout() {
                             • Visual Studio Code <br>
                             • Vercel <br>
                             • GitHub <br>
-                            • Google Icons <br>
-                            • Google Fonts <br>
-                            • FontAwesome <br>
-                            • SVG Repo 
                         </p>
                     </div>
                 </div>
@@ -144,7 +140,10 @@ export function loadAbout() {
                         <p class="black">
                             I am an aspiring software engineer based in East London who wants to become a backend engineer. 
                             I plan to do this by trying to secure an internship and improving my portfolio so I can gain 
-                            relevant knowledge and experience. 
+                            relevant knowledge and experience. I am currently using the Odin Project to develop my web development
+                            skills which I believe are imperative in todays world, where many companies are stuck using primitive websites
+                            which reflects poorly on their company. This resume is a mockup which was originally designed 
+                            to help me work on my HTML/CSS
                         </p>
                     </div>
                     <div class="section">

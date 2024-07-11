@@ -4,11 +4,12 @@
   font-weight: 500;
   font-size: 20px;
 }
-body.main{
+body{
     background-size: cover;
     font-size: calc(15px + 0.390625vw);
     position: relative;
     font-family: 'MyFont';
+}
     .inLine{
       li{
         display: inline;
@@ -516,157 +517,6 @@ body.main{
       max-width: 450px;
       margin-top: 30px;
     }
-}
-body.projects{
-  background-color: rgb(30, 28, 21);
-  font-family: "MyFont";
-  font-weight: 400;
-  font-size: calc(13px + 0.390625vw);
-  color: aliceblue;
-  font-optical-sizing: auto;
-  padding: 50px 160px 100px 160px;
-  @media screen and (max-width:1000px){
-    body{
-        padding: 0;
-        padding-bottom: 100px;
-    }
-  }
-  .title{
-      font-size: calc(25px + 0.390625vw);
-      color: rgb(255, 225, 159);
-      margin-right: 200px;
-  }
-  .desc{
-      color: bisque;
-      padding: 0px 0px 50px 0px;
-  }
 
-  a{
-      color: bisque;
-      text-decoration: none;
-  }
-  .bold{
-      font-weight: bold;
-  }
-  a:hover{
-      text-decoration: underline;
-  }
-  .container{
-      display: flex;
-      flex-wrap: unwrap;
-      align-content: flex-start;
-      margin-bottom: 30px;
-      a{
-          font-size: 20px;
-      }
-  }
-  .wrap{
-      flex-wrap: wrap;
-  }
-  .tags{
-      border: 2px solid wheat;
-      color: wheat;
-      padding: 10px;
-      margin-right: 10px;
-      font-size: 14px;
-  }
-  .firstImg{
-      width: 80%;
-      margin-right: 20%;
-  }
-  img{
-      width: 100%;
-  }
-  h2{
-      font-size: 24px;
-  }
-
-  .nav{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      position: fixed;
-      bottom: 0;
-      min-width: 70%;
-      max-width: 99%;
-      height: 70px;
-      background-color: rgb(0, 0, 0);
-      margin-bottom: 50px;
-      border: 2px solid white;
-  }
-  .button{
-      width: 100%;
-      text-align: center;
-      padding: 10px;
-      border-right: 1px solid white;
-  }
-  @media screen and (max-width:704px){
-      .nav{
-          min-width: 90%;
-          font-size: calc(10px + 0.390625vw);
-      }
-  }
-  @media screen and (max-width:390px){
-      .nav{
-          font-size: calc(8px + 0.390625vw);
-      }
-  }
-  .small{
-      font-size: calc(13px + 0.390625vw);
-  }
-  .resource img#vercel{
-      height: 95px;
-  }
-  .resource{
-      text-align: center;
-      padding: 10px;
-      color: #74C0FC;
-      margin: 15px;
-      height: 100px;
-      img{
-          height: 70px;
-      }
-      i{
-          width: 100%;
-          font-size: 70px;
-          height: 70px;
-      }
-      p{
-          margin-top: 7px;
-      }
-  }
-  .java{
-      img{
-          height: 125px;
-      }
-  }
-  .hidden{
-      visibility: hidden;
-  }
-  .resource:hover{
-      border: 2px solid rgb(255, 225, 159);
-      p{
-          visibility: visible;
-      }
-  }
-
-  div#stack{
-      flex-wrap: wrap;
-      max-width: 1100px;
-  }
-  #skills p{
-      width: 80%;
-  }
-  #calc{
-      width: 40%;
-  }
-  #enrol{
-      width: 50%;
-  }
-  #pass{
-      width: 70%;
-  }
-}
 
 

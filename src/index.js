@@ -13,7 +13,12 @@ function saveSelection(id) {
     var select = document.getElementById(id);
     localStorage.setItem(id, select.value);
 }
-        
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Optional: Smooth scrolling behavior
+    });
+}
 // Retrieve the selected value from local storage
 function loadSelection(id) {
     var select = document.getElementById(id);
@@ -58,12 +63,14 @@ function setCurrentTab(tab) {
 }
 
 document.getElementById("navHome").addEventListener('click', function() {
+    scrollToTop();
     loadHome();
     animateEffect();
     setCurrentTab('home');
 });
 
 document.getElementById("navAbout").addEventListener('click', function() {
+    scrollToTop();
     loadAbout();
     setTimeout(animateEffect);
     window.showSlides(1);  // Ensure first slide is shown after loadAbout
@@ -71,12 +78,14 @@ document.getElementById("navAbout").addEventListener('click', function() {
 });
 
 document.getElementById("navProject").addEventListener('click', function() {
+    scrollToTop();
     loadProject();
     animateEffect();
     setCurrentTab('project');
 });
 
 document.getElementById("navContact").addEventListener('click', function() {
+    scrollToTop();
     loadContact();
     animateEffect();
     setCurrentTab('contact');

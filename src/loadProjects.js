@@ -1,16 +1,17 @@
-
+export function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Optional: Smooth scrolling behavior
+    });
+}
 function switchCSS() {
     const stylesheet = document.getElementById('stylesheet');
     stylesheet.href = '/src/projects.css';
 }
 export function loadPass(){
+    scrollToTop();
     switchCSS();
     document.getElementById("content").innerHTML=`<h1 class="title">Password Generator</h1>
-    <div class="desc">
-        <a href="/index.html">Home</a> / 
-        <a href="/HTML/projects.html">Projects</a> / 
-        <a href="https://github.com/m0ravat/PasswordGen" target="_blank">Project Link</a>
-    </div>
     <div class="container">
         <div class="tags">Python</div>
         <div class="tags">VS Code</div>
@@ -76,6 +77,7 @@ export function loadPass(){
     `;
 }
 export function loadCalc(){
+    scrollToTop();
     switchCSS();
     document.getElementById("content").innerHTML=`        <h1 class="title gap">Calculator Project</h1>
         <div class="desc">
@@ -158,6 +160,7 @@ export function loadCalc(){
     `;
 }
 export function loadModule(){
+    scrollToTop();
     switchCSS();
     document.getElementById("content").innerHTML=`    <h1 class="title">Module Enrolment System</h1>
     <div class="desc">
@@ -228,6 +231,7 @@ export function loadModule(){
     `;
 }
 export function loadPort(){
+    scrollToTop();
     switchCSS();
     document.getElementById("content").innerHTML=`    <h1 class="title">Personal Portfolio</h1>
     <div class="desc">

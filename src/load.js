@@ -1,6 +1,43 @@
-
-export function loadHome(){
+export function animateEffect(){
+    setTimeout(function(){document.getElementById("topbox").style.visibility="visible";}, 400);
+    setTimeout(function(){document.getElementById("topbox").style.left="0";}, 400);
+    setTimeout(function(){document.getElementById("topbox").style.position="static";}, 1000);
     
+    setTimeout(function(){document.getElementById("topnav").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("topnav").style.left="0";}, 200);
+    
+    setTimeout(function(){document.getElementById("footer").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("footer").style.left="0";}, 200);
+    
+    setTimeout(function(){document.getElementById("content").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("content").style.left="0";}, 800);
+    
+    setTimeout(function(){document.getElementById("projects").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("projects").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("projects").style.position="static";}, 1200);
+
+    setTimeout(function(){document.getElementById("CursorOptions").style.visibility="visible";}, 200);
+    setTimeout(function(){document.getElementById("CursorOptions").style.left="0";}, 200);
+    
+    setTimeout(function(){document.getElementById("bottomInfo").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("bottomInfo").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("bottomInfo").style.position="static";}, 1200);
+
+    setTimeout(function(){document.getElementById("cc").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("cc").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("cc").style.position="static";}, 1200);
+    
+    setTimeout(function(){document.getElementById("c").style.visibility="visible";}, 800);
+    setTimeout(function(){document.getElementById("c").style.left="0";}, 800);
+    setTimeout(function(){document.getElementById("c").style.position="static";}, 1200);
+}
+export function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Optional: Smooth scrolling behavior
+    });
+}
+export function loadHome(){
     document.getElementById("content").innerHTML=`
     <div class="box" id="topbox">
         <div class="text">

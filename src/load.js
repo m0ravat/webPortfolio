@@ -31,6 +31,10 @@ export function animateEffect(){
     setTimeout(function(){document.getElementById("c").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("c").style.position="static";}, 1200);
 }
+function switchCSS() {
+    const stylesheet = document.getElementById('stylesheet');
+    stylesheet.href = '/src/style.css';
+}
 export function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -38,6 +42,7 @@ export function scrollToTop() {
     });
 }
 export function loadHome(){
+    switchCSS();
     document.getElementById("content").innerHTML=`
     <div class="box" id="topbox">
         <div class="text">
@@ -69,6 +74,7 @@ export function loadHome(){
     `;
 }
 export function loadAbout() {
+    switchCSS();
     document.getElementById("content").innerHTML = `
         <div class="box" id="topbox">
             <p>
@@ -239,6 +245,7 @@ export function loadAbout() {
 }
 
 export function loadContact(){
+    switchCSS();
     document.getElementById("content").innerHTML=`
     <div class="box" id="topbox">
             <div>
@@ -324,6 +331,7 @@ export function loadContact(){
          `;
 }
 export function loadProject(){
+    switchCSS();
     document.getElementById("content").innerHTML=`
     <div class="box" id="topbox">
             <div class="grid">

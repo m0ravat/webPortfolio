@@ -1,4 +1,4 @@
-export function scrollToTop() {
+function scrollToTop() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'  // Optional: Smooth scrolling behavior

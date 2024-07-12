@@ -1,4 +1,10 @@
+
+function switchCSS() {
+    const stylesheet = document.getElementById('stylesheet');
+    stylesheet.href = '/src/projects.css';
+}
 export function loadPass(){
+    switchCSS();
     document.getElementById("content").innerHTML=`<h1 class="title">Password Generator</h1>
     <div class="desc">
         <a href="/index.html">Home</a> / 
@@ -70,6 +76,7 @@ export function loadPass(){
     `;
 }
 export function loadCalc(){
+    switchCSS();
     document.getElementById("content").innerHTML=`        <h1 class="title gap">Calculator Project</h1>
         <div class="desc">
             <a href="/index.html">Home</a> / 
@@ -151,6 +158,7 @@ export function loadCalc(){
     `;
 }
 export function loadModule(){
+    switchCSS();
     document.getElementById("content").innerHTML=`    <h1 class="title">Module Enrolment System</h1>
     <div class="desc">
         <a href="/index.html">Home</a> / 
@@ -220,6 +228,7 @@ export function loadModule(){
     `;
 }
 export function loadPort(){
+    switchCSS();
     document.getElementById("content").innerHTML=`    <h1 class="title">Personal Portfolio</h1>
     <div class="desc">
         <a href="/index.html">Home</a> / 

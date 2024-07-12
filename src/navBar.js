@@ -5,7 +5,16 @@ var footer = document.getElementById("footer");
 var darkmode = document.getElementById("darkmode");
 let dcount=1;
 
+import { themeDark, themeLight } from "./footer";
 
+export function changeColour(){
+    if (dcount % 2 ==1){
+        themeDark();
+    }
+    else{
+        themeLight();
+    }
+}
 
 export function menuclick() {
     if (count % 2 == 1) {

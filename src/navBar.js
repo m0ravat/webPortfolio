@@ -42,11 +42,13 @@ export function menuclick() {
 export function darkclick() {
     dcount++;
     if (dcount % 2 == 1) {
-        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/dark.svg')";
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
         themeDark();
         localStorage.setItem('darkMode', 'enabled');
     } else {
-        document.body.style.backgroundImage = "url('/src/Media/Backgrounds/light.svg')";
+        document.body.classList.add("light");
+        document.body.classList.remove("black");
         themeLight();
         localStorage.setItem('darkMode', 'disabled');
     }

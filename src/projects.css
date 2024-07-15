@@ -76,6 +76,7 @@ h2{
 }
 
 .nav{
+    visibility: visible;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -83,11 +84,13 @@ h2{
     position: fixed;
     bottom: 0;
     min-width: 70%;
+    margin-left: 10%;
     max-width: 99%;
     height: 70px;
     background-color: rgb(0, 0, 0);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border: 2px solid white;
+    align-items: center;
 }
 .button.proj{
     width: 100%;
@@ -240,6 +243,9 @@ div#stack{
     width: 95%;
     margin: 1dvh 2dvh 0dvh 2dvh;
   }
+  #darkmode{
+    visibility: hidden;
+  }
   .topnav-left .button.main{
   float: left;
   }
@@ -323,3 +329,16 @@ div#stack{
   font-size: large;
   float: right;
   }
+  .customization{
+    visibility: hidden;
+  }
+  #CursorOptions #cursors{
+    visibility: hidden;
+  }
+ label{
+  visibility: hidden;
+  font-size: 1px;
+ }
+ select#cusors{
+  visibility: hidden;
+ }

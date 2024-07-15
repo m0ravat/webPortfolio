@@ -31,14 +31,28 @@ export function animateEffect(){
     setTimeout(function(){document.getElementById("c").style.left="0";}, 800);
     setTimeout(function(){document.getElementById("c").style.position="static";}, 1200);
 }
+import { themeDark, themeLight } from "./footer";
 function switchCSS() {
+    document.body.classList.remove("brown");
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled' || darkMode === null) {
+        document.body.classList.remove("light")
+        document.body.classList.add("dark");
+        themeDark();
+        var dcount = 1;
+    } else {
+        document.body.classList.remove("dark");
+        document.body.classList.add("light")
+        themeLight();
+        var dcount = 0;
+    }
     const stylesheet = document.getElementById('stylesheet');
     stylesheet.href = '/src/style.css';
 }
 export function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth'  // Optional: Smooth scrolling behavior
+        behavior: 'instant'
     });
 }
 export function loadHome(){

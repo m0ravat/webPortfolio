@@ -40,20 +40,13 @@ export function switchCSS() {
     if (darkMode === 'enabled' || darkMode === null) {
         document.body.classList.remove("light");
         document.body.classList.add("dark");
-        themeDark();
+        // Call themeDark() if defined
         var dcount = 1;
     } else {
         document.body.classList.remove("dark");
         document.body.classList.add("light");
-        themeLight();
+        // Call themeLight() if defined
         var dcount = 0;
-    }
-
-    // Remove projects.css if it exists
-    const projectsCSS = document.getElementById('projects-css');
-    if (projectsCSS) {
-        projectsCSS.remove();
-        console.log('projects.css removed');
     }
 
     // Dynamically load style.css if it's not already loaded
@@ -76,7 +69,6 @@ export function switchCSS() {
         document.head.appendChild(link);
     }
 }
-
 
 
 export function scrollToTop() {

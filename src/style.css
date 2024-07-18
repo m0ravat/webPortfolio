@@ -54,6 +54,7 @@ h1{
 
 
 /*Navbar CSS */
+
 header{
   position: fixed;
   min-height: 60px;
@@ -77,21 +78,25 @@ float: left;
   float: right;
   width: 40%;
 }
+@media screen and (max-width:552px){
+  .topnav-right{
+    width: 30%;
+  }
+}
 .topnav-right .button{
   float: right;
 }
 @media screen and (max-width:739px){
   .topnav-right{
-    width: 50%;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width:568px) {
   .topnav-right .button{
     float: left;
-    width: 35%;
   }
-  .topnav-left .button{
-    width: 20%;
+  .button.main{
+    width: 45px;
   }
 }
 .material-symbols-outlined{
@@ -110,6 +115,7 @@ color: transparent;
 text-align: center;
 padding-top: 15px;
 text-decoration: none;
+min-width: 55px;
 width: 20%;
 border: 0px;
 background-color: transparent;
@@ -130,7 +136,16 @@ min-height: 55px;
     background-color: chartreuse;
   }
 }
+@media screen and (max-width:550px){
+  .header{
+    margin-left: 0;
+  }
+  .button.main{
+    min-width: auto;
+    width: 45px;
+  }
 
+}
 .black{
   color: #000000;
 }
@@ -224,11 +239,26 @@ footer:hover{
   position: static;
   margin: auto;
 }
-
+@media screen and (max-width:361px){
+  div.board{
+    overflow: hidden;
+    width: 100px ;
+  }
+}
 .mySlides {
   display: none;
+  max-width: max-content;
 }
+@media screen and (max-width:362px){
+  .mySlides{
+      font-size: calc(8px + 0.390625vw);
 
+  }
+}
+#c{
+  margin: 0;
+  padding-left: 0;
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;

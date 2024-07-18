@@ -11,14 +11,23 @@ body{
     font-size: calc(15px + 0.390625vw);
     color: aliceblue;
     font-optical-sizing: auto;
-    #content{
-        padding: 50px 160px 100px 160px;
-    }
+}
+#content{
+  padding: 50px 160px 100px 160px;
 }
 @media screen and (max-width:1000px){
   body{
       padding: 0;
       padding-bottom: 100px;
+  }
+  #content{
+    margin-top: 80px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1000px) and  (max-width:1250px){
+  #content{
+    margin-top: 20px;
   }
 }
 .gap{
@@ -47,7 +56,8 @@ a:hover{
 }
 .container{
     display: flex;
-    flex-wrap: unwrap;
+    flex-wrap: wrap;
+    row-gap: 10px;
     align-content: flex-start;
     margin-bottom: 30px;
     a{
@@ -102,6 +112,7 @@ h2{
     .nav{
         min-width: 90%;
         font-size: calc(10px + 0.390625vw);
+        margin-left: 10px;
     }
 }
 @media screen and (max-width:390px){
@@ -243,7 +254,7 @@ div#stack{
     width: 95%;
     margin: 1dvh 2dvh 0dvh 2dvh;
   }
-  #darkmode{
+  button#darkmode{
     visibility: hidden;
   }
   .topnav-left .button.main{

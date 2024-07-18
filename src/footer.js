@@ -2,6 +2,8 @@ let index = document.getElementById("cursors");
 var darkmode = document.getElementById("darkmode");
 var buttons = document.querySelectorAll(".topnav-left .button");
 var navbar = document.getElementById("topnav");
+var menu = document.getElementById("menubutton");
+
 export function cursorChange(){
     index = document.getElementById("cursors").selectedIndex;
     switch(index){

@@ -40,12 +40,12 @@ export function switchCSS() {
     if (darkMode === 'enabled' || darkMode === null) {
         document.body.classList.remove("light");
         document.body.classList.add("dark");
-        // Call themeDark() if defined
+        themeDark();
         var dcount = 1;
     } else {
         document.body.classList.remove("dark");
         document.body.classList.add("light");
-        // Call themeLight() if defined
+        themeLight();
         var dcount = 0;
     }
 

@@ -13,7 +13,7 @@ body{
     font-optical-sizing: auto;
 }
 #content{
-  padding: 50px 160px 100px 160px;
+  padding: 100px 160px 100px 160px;
 }
 @media screen and (max-width:1000px){
   body{

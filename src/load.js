@@ -36,29 +36,44 @@ function switchCSS() {
     document.body.classList.remove("brown");
     const darkMode = localStorage.getItem('darkMode');
     if (darkMode === 'enabled' || darkMode === null) {
-        document.body.classList.remove("light")
+        document.body.classList.remove("light");
         document.body.classList.add("dark");
         themeDark();
         var dcount = 1;
     } else {
         document.body.classList.remove("dark");
-        document.body.classList.add("light")
+        document.body.classList.add("light");
         themeLight();
         var dcount = 0;
     }
-    import('./style.css').then(() => {
+
+    // Remove projects.css if it exists
+    const projectsCSS = document.getElementById('projects-css');
+    if (projectsCSS) {
+        projectsCSS.remove();
+        console.log('projects.css removed');
+    }
+
+    // Dynamically load style.css
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'style.css';
+    link.id = 'style-css'; // Optionally assign an ID for later reference
+
+    link.onload = function() {
         console.log('style.css loaded');
-        // Remove projects.css if it exists
-        const projectsCSS = document.getElementById('projects-css');
-        if (projectsCSS) {
-          projectsCSS.remove();
-          console.log('projects.css removed');
-        }
         // Optionally trigger some functionality after style.css is loaded
-      }).catch(err => {
+    };
+
+    link.onerror = function(err) {
         console.error('Failed to load style.css', err);
-      });
+    };
+
+    // Append the <link> tag to the <head> element
+    document.head.appendChild(link);
 }
+
 export function scrollToTop() {
     window.scrollTo({
         top: 0,

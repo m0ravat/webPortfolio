@@ -4,20 +4,35 @@ function scrollToTop() {
         behavior: 'instant'  // Optional: Smooth scrolling behavior
     });
 }
-function switchCSS() {
-    document.body.style.color="aliceblue";
+export function switchCSS() {
+    document.body.style.color = "aliceblue";
     document.body.classList.add("brown");
     document.body.classList.remove("light");
     document.body.classList.remove("dark");
-    if (!document.getElementById('projects-css')) {
+
+    // Check if projects.css is already loaded
+    const projectsCSS = document.getElementById('projects-css');
+    if (!projectsCSS) {
+        // Create a new <link> tag for projects.css
         const link = document.createElement('link');
         link.id = 'projects-css';
         link.rel = 'stylesheet';
         link.href = '/src/projects.css';
+
+        link.onload = function() {
+            console.log('projects.css loaded');
+            // Optionally trigger some functionality after projects.css is loaded
+        };
+
+        link.onerror = function(err) {
+            console.error('Failed to load projects.css', err);
+        };
+
+        // Append the <link> tag to the <head> element
         document.head.appendChild(link);
-        console.log('projects.css loaded');
-      }
+    }
 }
+
 export function loadPass(){
     scrollToTop();
     switchCSS();

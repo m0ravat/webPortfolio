@@ -2,35 +2,36 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  // Entry point of your application
   entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
+    // Output directory for bundled files
     path: path.resolve(__dirname, 'dist'),
-    clean: true, // Ensures the dist folder is cleaned before each build
+    // Output filename
+    filename: 'bundle.js',
+    // Public path (if needed)
+    publicPath: '',
   },
   plugins: [
+    // Plugin to generate index.html
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      filename: 'index.html',
     }),
   ],
+  // Other webpack configurations (loaders, etc.)
   module: {
     rules: [
+      // Rules for CSS, images, etc.
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: 'asset/resource',
       },
     ],
   },
-  devServer: {
-    static: './dist',
-    open: true, // Automatically open the browser
-  },
 };
+

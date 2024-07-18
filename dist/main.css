@@ -556,10 +556,10 @@ legend{
 
 
 .dark {
-    background-image: url(Media/indexImg/dark.svg);
+    background-image: url(Media/Backgrounds/dark.svg);
 }
 .light {
-    background-image: url(Media/indexImg/light.svg);
+    background-image: url(Media/Backgrounds/light.svg);
 }
 .brown{
     background-color: rgb(30, 28, 21);

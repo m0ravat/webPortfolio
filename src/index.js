@@ -1,3 +1,5 @@
+import './style.css';  // Default styles loaded on initial page load
+import './class.css';
 var menu = document.getElementById("menubutton");
 var darkmode = document.getElementById("darkmode");
 var cursors = document.getElementById("CursorOptions");

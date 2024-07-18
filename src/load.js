@@ -46,8 +46,18 @@ function switchCSS() {
         themeLight();
         var dcount = 0;
     }
-    const stylesheet = document.getElementById('stylesheet');
-    stylesheet.href = '/src/style.css';
+    import('./style.css').then(() => {
+        console.log('style.css loaded');
+        // Remove projects.css if it exists
+        const projectsCSS = document.getElementById('projects-css');
+        if (projectsCSS) {
+          projectsCSS.remove();
+          console.log('projects.css removed');
+        }
+        // Optionally trigger some functionality after style.css is loaded
+      }).catch(err => {
+        console.error('Failed to load style.css', err);
+      });
 }
 export function scrollToTop() {
     window.scrollTo({

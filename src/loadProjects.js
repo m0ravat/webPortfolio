@@ -9,8 +9,14 @@ function switchCSS() {
     document.body.classList.add("brown");
     document.body.classList.remove("light");
     document.body.classList.remove("dark");
-    const stylesheet = document.getElementById('stylesheet');
-    stylesheet.href = '/src/projects.css';
+    if (!document.getElementById('projects-css')) {
+        const link = document.createElement('link');
+        link.id = 'projects-css';
+        link.rel = 'stylesheet';
+        link.href = '/src/projects.css';
+        document.head.appendChild(link);
+        console.log('projects.css loaded');
+      }
 }
 export function loadPass(){
     scrollToTop();

@@ -8,6 +8,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    assetModuleFilename: 'Media/[name][ext]', // Specify the output path for assets
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -24,22 +25,33 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'Media/[folder]/[name][ext]', // Output images to Media/indexImg/ folder in dist
+          filename: 'Media/[name][ext]', // Output images to the Media folder
+        },
+      },
+      {
+        test: /\.svg$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'Media/Backgrounds/[name][ext]', // Output SVGs to the Backgrounds folder
         },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'fonts/[name][ext]', // Output fonts to fonts/ folder in dist
+          filename: 'fonts/[name][ext]', // Output fonts to the fonts folder
         },
       },
     ],
   },
 };
+
+
+
+
 
 
 

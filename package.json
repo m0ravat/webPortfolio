@@ -8,6 +8,11 @@
     "build": "webpack --mode production",
     "start": "webpack serve --open"
   },
+  "scripts": {
+  "build": "npm run copy-images && webpack --mode production",
+  "copy-images": "robocopy src\\Media dist\\Media /E"
+  },
+
   "author": "",
   "license": "ISC",
   "devDependencies": {

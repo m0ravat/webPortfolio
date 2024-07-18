@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'MyFont';
-  src:url(19ba637387f1d6142f55.ttf) format('truetype');
+  src:url(fonts/OpenSans.ttf) format('truetype');
   font-weight: 500;
   font-size: 20px;
 }
@@ -556,10 +556,10 @@ legend{
 
 
 .dark {
-    background-image: url(449fbca4a003922400a2.svg);
+    background-image: url(Media/indexImg/dark.svg);
 }
 .light {
-    background-image: url(b4322f9e3d48345d710e.svg);
+    background-image: url(Media/indexImg/light.svg);
 }
 .brown{
     background-color: rgb(30, 28, 21);

@@ -26,14 +26,22 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'Media/[folder]/[name][ext]', // Output images to Media/indexImg/ folder in dist
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]', // Output fonts to fonts/ folder in dist
+        },
       },
     ],
   },
 };
+
+
 
 
 

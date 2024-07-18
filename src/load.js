@@ -32,47 +32,44 @@ export function animateEffect(){
     setTimeout(function(){document.getElementById("c").style.position="static";}, 1200);
 }
 import { themeDark, themeLight } from "./footer";
-function switchCSS() {
+import './style.css';
+
+export function switchCSS() {
     document.body.classList.remove("brown");
     const darkMode = localStorage.getItem('darkMode');
     if (darkMode === 'enabled' || darkMode === null) {
         document.body.classList.remove("light");
         document.body.classList.add("dark");
-        themeDark();
+        // Call themeDark() if defined
         var dcount = 1;
     } else {
         document.body.classList.remove("dark");
         document.body.classList.add("light");
-        themeLight();
+        // Call themeLight() if defined
         var dcount = 0;
     }
 
-    // Remove projects.css if it exists
-    const projectsCSS = document.getElementById('projects-css');
-    if (projectsCSS) {
-        projectsCSS.remove();
-        console.log('projects.css removed');
+    // Dynamically load style.css if it's not already loaded
+    const styleCSS = document.getElementById('style-css');
+    if (!styleCSS) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'style.css';
+        link.id = 'style-css';
+
+        link.onload = function () {
+            console.log('style.css loaded');
+            // Optionally trigger some functionality after style.css is loaded
+        };
+
+        link.onerror = function (err) {
+            console.error('Failed to load style.css', err);
+        };
+
+        document.head.appendChild(link);
     }
-
-    // Dynamically load style.css
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'style.css';
-    link.id = 'style-css'; // Optionally assign an ID for later reference
-
-    link.onload = function() {
-        console.log('style.css loaded');
-        // Optionally trigger some functionality after style.css is loaded
-    };
-
-    link.onerror = function(err) {
-        console.error('Failed to load style.css', err);
-    };
-
-    // Append the <link> tag to the <head> element
-    document.head.appendChild(link);
 }
+
 
 export function scrollToTop() {
     window.scrollTo({

@@ -19,12 +19,12 @@ export function switchCSS() {
         link.rel = 'stylesheet';
         link.href = '/src/projects.css';
 
-        link.onload = function() {
+        link.onload = function () {
             console.log('projects.css loaded');
             // Optionally trigger some functionality after projects.css is loaded
         };
 
-        link.onerror = function(err) {
+        link.onerror = function (err) {
             console.error('Failed to load projects.css', err);
         };
 
@@ -32,6 +32,8 @@ export function switchCSS() {
         document.head.appendChild(link);
     }
 }
+
+  
 
 export function loadPass(){
     scrollToTop();

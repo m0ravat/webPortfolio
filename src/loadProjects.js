@@ -30,7 +30,7 @@ export function loadPass(){
     </div>
     <div class="container wrap">
         <div class="firstImg">
-            <img src="/src/Media/ProjectsImg/password.png" alt="Image of password" id="pass">
+            <img src="Media/ProjectsImg/password.png" alt="Image of password" id="pass">
         </div>
         <div class="contents">
             <h2>Table of Contents</h2> <br>
@@ -44,15 +44,15 @@ export function loadPass(){
     <h1>Stack </h1>
     <div class="container wrap width" id="stack">
         <div class="resource">
-            <img src="/src/Media/StackImgg/python-svgrepo-com.svg" alt="">
+            <img src="Media/StackImgg/python-svgrepo-com.svg" alt="">
             <p class="small hidden">Python</p>
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="">
+            <img src="Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="">
             <p class="small hidden">VS Code</p>
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+            <img src="Media/StackImgg/github-142-svgrepo-com.svg" alt="">
             <p class="small hidden">GitHub</p>
         </div>
     </div>

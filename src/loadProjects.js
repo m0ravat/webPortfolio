@@ -9,28 +9,8 @@ export function switchCSS() {
     document.body.classList.add("brown");
     document.body.classList.remove("light");
     document.body.classList.remove("dark");
-
-    // Check if projects.css is already loaded
-    const projectsCSS = document.getElementById('projects-css');
-    if (!projectsCSS) {
-        // Create a new <link> tag for projects.css
-        const link = document.createElement('link');
-        link.id = 'projects-css';
-        link.rel = 'stylesheet';
-        link.href = '/src/projects.css';
-
-        link.onload = function () {
-            console.log('projects.css loaded');
-            // Optionally trigger some functionality after projects.css is loaded
-        };
-
-        link.onerror = function (err) {
-            console.error('Failed to load projects.css', err);
-        };
-
-        // Append the <link> tag to the <head> element
-        document.head.appendChild(link);
-    }
+    document.body.classList.add("proj");
+    document.body.classList.remove("main");
 }
 
   
@@ -38,7 +18,7 @@ export function switchCSS() {
 export function loadPass(){
     scrollToTop();
     switchCSS();
-    document.getElementById("content").innerHTML=`<h1 class="title">Password Generator</h1>
+    document.getElementById("content").innerHTML=`<div class = "padding"><h1 class="title">Password Generator</h1>
     <div class="container">
         <div class="tags">Python</div>
         <div class="tags">VS Code</div>
@@ -101,12 +81,13 @@ export function loadPass(){
             a python file so in the future I would like to incorporate it into a user interface. 
         </p>
     </div>
+    </div>
     `;
 }
 export function loadCalc(){
     scrollToTop();
     switchCSS();
-    document.getElementById("content").innerHTML=`        <h1 class="title gap">Calculator Project</h1>
+    document.getElementById("content").innerHTML=` <div class = "padding">       <h1 class="title gap">Calculator Project</h1>
         <div class="container">
             <div class="tags">Web Programming</div>
             <div class="tags">Arithmetic</div>
@@ -178,12 +159,14 @@ export function loadCalc(){
                 massive step up from simply programming in a console, and I feel this has given me alot to think about in the future.
             </p>
         </div>
+        </div>
+
     `;
 }
 export function loadModule(){
     scrollToTop();
     switchCSS();
-    document.getElementById("content").innerHTML=`    <h1 class="title">Module Enrolment System</h1>
+    document.getElementById("content").innerHTML=`<div class = "padding">    <h1 class="title">Module Enrolment System</h1>
     <div class="container">
         <div class="tags">Java</div>
         <div class="tags">IntelliJ</div>
@@ -244,12 +227,13 @@ export function loadModule(){
             helped me consider multiple aspects of data that need to be stored. 
         </p>
     </div>
+    </div>
     `;
 }
 export function loadPort(){
     scrollToTop();
     switchCSS();
-    document.getElementById("content").innerHTML=`    <h1 class="title">Personal Portfolio</h1>
+    document.getElementById("content").innerHTML=` <div class = "padding">   <h1 class="title">Personal Portfolio</h1>
     <div class="container">
         <div class="tags">Web Development</div>
         <div class="tags">Web Design</div>
@@ -257,7 +241,7 @@ export function loadPort(){
     </div>
     <div class="container wrap">
         <div class="firstImg">
-            <img src="/src/Media/ProjectsImg/port.png" alt="Image of Home page">
+            <img src="/src/Media/ProjectsImg/port.png" alt="Image of Home page" id="port">
         </div>
         <div class="contents">
             <h2>Table of Contents</h2> <br>
@@ -322,5 +306,7 @@ export function loadPort(){
             my skills in JavaScript through my calculator project, and hope to showcase it in future projects to come. 
         </p>
     </div>
+    </div>
+
     `;
 }

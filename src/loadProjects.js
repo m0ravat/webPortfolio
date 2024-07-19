@@ -99,7 +99,7 @@ export function loadCalc(){
         </div>
         <div class="container wrap">
             <div class="firstImg">
-                <img src="/src/Media/ProjectsImg/calc.png" alt="Image of Calculator UI" id="calc">
+                <img src="Media/ProjectsImg/calc.png" alt="Image of Calculator UI" id="calc">
             </div>
             <div class="contents">
                 <h2>Table of Contents</h2> <br>
@@ -114,23 +114,23 @@ export function loadCalc(){
         <h1>Stack </h1>
         <div class="container wrap width" id="stack">
             <div class="resource">
-                <img src="/src/Media/StackImgg/html5-01-svgrepo-com.svg" alt="" id="vercel">
+                <img src="Media/StackImgg/html5-01-svgrepo-com.svg" alt="" id="vercel">
             </div>
             <div class="resource">
-                <img src="/src/Media/StackImgg/css3-01-svgrepo-com.svg" id="vercel" alt="">
+                <img src="Media/StackImgg/css3-01-svgrepo-com.svg" id="vercel" alt="">
             </div>
             <div class="resource">
-                <img src="/src/Media/StackImgg/javascript-155-svgrepo-com.svg" id="vercel" alt="">
+                <img src="Media/StackImgg/javascript-155-svgrepo-com.svg" id="vercel" alt="">
             </div>
             <div class="resource">
-                <img src="/src/Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="" >
+                <img src="Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="" >
                 <p class="small hidden">VS Code</p>
             </div>
             <div class="resource">
-                <img src="/src/Media/StackImgg/vercel-svgrepo-com.svg" alt="" id="vercel">
+                <img src="Media/StackImgg/vercel-svgrepo-com.svg" alt="" id="vercel">
             </div>
             <div class="resource">
-                <img src="/src/Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+                <img src="Media/StackImgg/github-142-svgrepo-com.svg" alt="">
                 <p class="small hidden">GitHub</p>
             </div>
         </div>
@@ -178,7 +178,7 @@ export function loadModule(){
     </div>
     <div class="container wrap">
         <div class="firstImg">
-            <img src="/src/Media/ProjectsImg/enrol.png" alt="" id="enrol">
+            <img src="Media/ProjectsImg/enrol.png" alt="" id="enrol">
         </div>
         <div class="contents">
             <h2>Table of Contents</h2> <br>
@@ -192,15 +192,15 @@ export function loadModule(){
     <h1>Stack </h1>
     <div class="container wrap width" id="stack">
         <div class="resource">
-            <img src="/src/Media/StackImgg/intellij-idea-svgrepo-com.svg" alt="">
+            <img src="Media/StackImgg/intellij-idea-svgrepo-com.svg" alt="">
             <p class="small hidden">IntelliJ</p>
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/Javaa.png" alt="">
+            <img src="Media/StackImgg/Javaa.png" alt="">
             <p class="small hidden">Java</p>
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+            <img src="Media/StackImgg/github-142-svgrepo-com.svg" alt="">
             <p class="small hidden">GitHub</p>
         </div>
 
@@ -244,7 +244,7 @@ export function loadPort(){
     </div>
     <div class="container wrap">
         <div class="firstImg">
-            <img src="/src/Media/ProjectsImg/port.png" alt="Image of Home page" id="port">
+            <img src="Media/ProjectsImg/port.png" alt="Image of Home page" id="port">
         </div>
         <div class="contents">
             <h2>Table of Contents</h2> <br>
@@ -259,23 +259,23 @@ export function loadPort(){
     <h1>Stack </h1>
     <div class="container wrap width" id="stack">
         <div class="resource">
-            <img src="/src/Media/StackImgg/html5-01-svgrepo-com.svg" alt="" id="vercel">
+            <img src="Media/StackImgg/html5-01-svgrepo-com.svg" alt="" id="vercel">
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/css3-01-svgrepo-com.svg" id="vercel" alt="">
+            <img src="Media/StackImgg/css3-01-svgrepo-com.svg" id="vercel" alt="">
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/javascript-155-svgrepo-com.svg" id="vercel" alt="">
+            <img src="Media/StackImgg/javascript-155-svgrepo-com.svg" id="vercel" alt="">
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="" >
+            <img src="Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="" >
             <p class="small hidden">VS Code</p>
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/vercel-svgrepo-com.svg" alt="" id="vercel">
+            <img src="Media/StackImgg/vercel-svgrepo-com.svg" alt="" id="vercel">
         </div>
         <div class="resource">
-            <img src="/src/Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+            <img src="Media/StackImgg/github-142-svgrepo-com.svg" alt="">
             <p class="small hidden">GitHub</p>
         </div>
     </div>

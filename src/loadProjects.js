@@ -11,6 +11,9 @@ export function switchCSS() {
     document.body.classList.remove("dark");
     document.body.classList.add("proj");
     document.body.classList.remove("main");
+    document.getElementById("darkmode").style.visibility="hidden";
+    document.getElementById("ThemeOptions").style.visibility="hidden";
+    document.getElementById("themes").style.visibility="hidden";
 }
 
   

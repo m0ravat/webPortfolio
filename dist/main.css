@@ -562,6 +562,10 @@ body.projj{
   .footer{
     visibility: hidden;
   }
+  a{
+    color: bisque;
+    text-decoration: none;
+  }
 }
 .padding{
   padding:100px 160px 100px 160px;
@@ -595,10 +599,7 @@ body.projj{
     padding: 0px 0px 50px 0px;
 }
 
-a{
-    color: bisque;
-    text-decoration: none;
-}
+
 .bold{
     font-weight: bold;
 }

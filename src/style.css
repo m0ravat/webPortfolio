@@ -651,6 +651,9 @@ h2{
     margin-bottom: 20px;
     border: 2px solid white;
     align-items: center;
+    a{
+      color: bisque;
+    }
 }
 .button.proj{
     width: 100%;

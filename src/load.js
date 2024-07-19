@@ -38,6 +38,9 @@ export function switchCSS() {
     document.body.classList.remove("brown");
     document.body.classList.remove("proj");
     document.body.classList.add("main");
+    document.getElementById("darkmode").style.visibility="visible";
+    document.getElementById("ThemeOptions").style.visibility="visible";
+    document.getElementById("themes").style.visibility="visible";
     const darkMode = localStorage.getItem('darkMode');
     if (darkMode === 'enabled' || darkMode === null) {
         document.body.classList.remove("light");

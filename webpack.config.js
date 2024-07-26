@@ -14,7 +14,7 @@ module.exports = {
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.css', // This will bundle all CSS into styles.css
+      filename: 'main.css', // This will bundle all CSS into styles.css
     }),
   ],
   module: {

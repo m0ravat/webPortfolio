@@ -1,6 +1,5 @@
-import './projects.css';
-import './style.css';
-import './class.css';
+import './main.css';
+
 
 var menu = document.getElementById("menubutton");
 var darkmode = document.getElementById("darkmode");
@@ -9,7 +8,7 @@ var themes = document.getElementById("ThemeOptions");
 
 import {animateEffect, scrollToTop} from "./load.js";
 import { loadHome, loadAbout, loadProject, loadContact } from "./load.js";
-import { menuclick, darkclick, changeColour } from "./navBar.js";
+import { menuclick, darkclick, changeColour } from "./navbar.js";
 import { cursorChange, themeDark, themeLight } from "./footer.js";
 import { loadCalc, loadModule, loadPass, loadPort } from "./loadProjects.js";
 

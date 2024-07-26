@@ -1,4 +1,4 @@
-import './main.css';
+import './styles.css';
 
 
 var menu = document.getElementById("menubutton");

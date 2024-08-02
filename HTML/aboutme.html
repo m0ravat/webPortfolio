@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me Page</title>
+    <script src="https://kit.fontawesome.com/71da1e9480.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body style="visibility: hidden;" onload="load()">
+    <div  id="topnav">
+        <div class="topnav-left">
+            <a href="/index.html" class="button">
+                <span class="material-symbols-outlined">home</span>
+                <span class="icon-text">Home</span>
+            </a>
+            <a href="/HTML/aboutme.html" class="button"  id="active">
+                <span class="material-symbols-outlined">person</span>
+                <span class="icon-text">About Me</span>
+            </a>
+            <a href="/HTML/projects.html" class="button">
+                <span class="material-symbols-outlined">workspaces</span>
+                <span class="icon-text">Projects</span>
+            </a>
+            <a href="/HTML/contact.html" class="button">
+                <span class="material-symbols-outlined">contact_mail</span>
+                <span class="icon-text">Contact Me</span>
+            </a>
+            <h1 style="float: left;" id="navTitle">About Me</h1> 
+        </div>
+        <div class="topnav-right">
+            <button class="button" id="menubutton">
+                <span class="material-symbols-outlined" onclick="menuclick()">menu</span>
+                <span class="icon-text">Hide/Show Menu</span>
+            </button>       
+            <button class="button" id="darkmode" onclick="darkclick()">
+                <span class="material-symbols-outlined">contrast</span>
+                <span class="icon-text">Light/Dark Mode</span>
+            </button> 
+        </div>
+    </div>
+    <div class="box" id="topbox">
+        <p>
+                Hi. I am an aspiring backend engineer currently working on my frontend skills. To showcase this I have made a resume purely
+                from HTML & CSS (only available on landscape or wide resolution) and a slideshow for you mobile users. 
+        </p>
+    </div>
+    <div class="box" id="content">
+        <div class="slideshow-container"> 
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="mySlides fade">
+              <div class="board">
+                <h1>My interest in technology</h1>
+                <p>
+                    I have been interested in technology since secondary school where I began pseudocode. I proceeded 
+                    to code in visual basic during college, and in university Python/Java and HTML/CSS/JS. I aspire to be a backend 
+                    programmer as that is where my preference lies, but I am developing my front end skills to Show
+                    off my skills to employers like through this portfolio. I am planning on continuing on The Odin Project to learn more
+                    about web development and pick up front end technologies like React/TailWind and then move onto the server side. 
+                </p>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="board">
+                <h1>Tools I use</h1>
+                <p>
+                    Coding Languages : <br>
+                     - Python <br>
+                     - Java <br>
+                     - HTML/CSS/JS <br> <br>
+                    Software/Tools : <br>
+                     - NetBeans/IntelliJ IDEA (Java) <br>
+                     - Python IDE <br>
+                     - Visual Studio Code (Python/(HTML/CSS/JS)) <br>
+                     - Vercel (web deployment) <br> 
+                     - GitHub (Version control) <br> <br>
+                    Websites used for design : <br>
+                     - Google Icons/fontawesome/SVGRepo (icons) <br>
+                     - Google Fonts (Font) <br> <br>
+                    Online BootCamps/Resources : <br>
+                    - w3schools (basic concepts) <br>
+                    - HackerRank (Test my knowledge) <br>
+                    - The Odin Project (Current)
+                </p>
+              </div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="board"> 
+                <h1>Main Projects</h1>
+                <p>
+                    Python - Random Password Generator <br>
+                    Generates a random password of 12 characters featuring the use of uppercase/lowercase letters, numbers and 
+                    special characters. <br> <br>
+                    Java - Module Enrolment System <br>
+                    Allows students to enrol in a module, featuring 5 through the use of object oriented programming. <br> <br>
+                    HTML/CSS - Personal Portfolio <br> 
+                    Created a portfolio to showcase my skills and increase employability skills.  <br> <br>
+                    JavaScript - Calculator Project <br>
+                    Two function calculator that does basic arithmetic and finds the degree outcome of a UG university student. 
+                    Uses input validation and string manipulation
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="resume">
+            <div class="leftCV">
+                <img src="/Media/AboutMeImg/CVimg.jpeg" alt="" class="imgCV">
+                <div class="bioCV">
+                    <span class="material-symbols-outlined padd">person</span>
+                    Muhammad Ravat <br> <br>
+                    <span class="material-symbols-outlined padd">apartment</span>
+                    London, UK <br> <br>
+                    <span class="material-symbols-outlined padd">mail</span>
+                    moravat763@gmail.com <br> <br>
+                    <span class="material-symbols-outlined padd">phone_in_talk</span>
+                    07769004379 <br> <br>
+                    <span class="material-symbols-outlined padd">language</span>
+                    Languages
+                    <p class="leftP">• English <br>
+                        • Gujarati
+                    </p>
+                    <span class="material-symbols-outlined padd">grade</span> 
+                    Coding Languages
+                    <p class="leftP">
+                        • Python <br>
+                        • Java <br>
+                        • HTML/CSS/JS 
+                    </p>
+                    <span class="material-symbols-outlined padd">laptop_mac</span>
+                    Software/Tools used
+                    <p class="leftP">
+                        • IntelliJ <br>
+                        • Python IDE <br>
+                        • Visual Studio Code <br>
+                        • Vercel <br>
+                        • GitHub <br>
+                        • Google Icons <br>
+                        • Google Fonts <br>
+                        • FontAwesome <br>
+                        • SVG Repo 
+                    </p>
+                </div>
+            </div>
+            <div class="rightCV">
+                <div class="section" style="overflow: hidden; height: auto;"> 
+                    <h1>About Me</h1>
+                    <p class="black">
+                        I am an aspiring software engineer based in East London who wants to become a backend engineer. 
+                        I plan to do this by trying to secure an internship and improving my portfolio so I can gain 
+                        relevant knowledge and experience. 
+                    </p>
+                </div>
+                <div class="section">
+                    <h1>Key Skills</h1>
+                    <p class="black">
+                        ● Communicating within a team - I was part of a student council with 20+ other form representatives and
+                        multiple teachers. <br>
+                        ● Time management skills - Had to balance 3 university level courseworks and 1 test during Ramadan
+                        where I had to fast throughout the whole day. <br>
+                        ● Proactive mindset - One duty as a form representative included reaching out to students and asking their
+                        opinion. <br>
+                        ● Leadership - Was part of a group project where I was key in making sure everyone knew what to do and I
+                        had a template set up for everyone. <br>
+                    </p>
+                </div>
+                <div class="section"> 
+                    <h1>Experience</h1>
+                    <p class="black">
+                        Form Representative at Langdon Academy (Duration : 1 Academic Year) <br>
+                        General description : Part of a student council of 20+ students within the year group and members of faculty, for
+                        the purpose of improving the school experience
+                    </p>
+                </div>
+                <div class="section"> 
+                    <h1>Education History</h1>
+                    <p class="black">
+                        Langdon Academy | 2016 - 2021 <br> 
+                        11 GCSEs Grades 8-4 including English Language (7), Maths (7), Computer Science (8) <br> <br>
+    
+                        Newham Sixth Form College (Newvic) | 2021 - 2023 <br> 
+                        A Levels in Computer Science (D), Economics (C) and Psychology (C) <br> <br>
+    
+                        University of Westminster | 2023 - Current <br> 
+                        Bachelor of Engineering (BEng) Degree in Software Engineering <br>
+                        1st year average mark - 72% (1st Class Honours) <br>
+                        2nd year average mark - TBA <br>
+                        Predicted/Final Degree - TBA/TBA
+                    </p>
+                </div> 
+                <div class="section">
+                    <h1>Projects</h1>
+                    <p class="black">
+                        Personal Portfolio (April 2024 - Current) - Created a personal portfolio and uploaded it using vercel to
+                        show off my coding skills and improve my web development skills. <br>
+                        Module Intake System (June 2024 - June 2024) - Created a 3 class program in Java to allow students to book what 
+                        module they would like to join and other features. <br>
+                        Calculator App - 2 function calculator designed to do basic arithmetic and calculate the degree of an
+                        undergraduate student in HTML/CSS/JS.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="box" id="bottomInfo">
+        <div class="socials">
+            Relevant Links
+            <div class="flex">
+                <a href="https://github.com/m0ravat" target="_blank"><i class="fa-brands fa-github fa-3x"></i> <br> Github</a>
+                <a href="https://www.linkedin.com/in/muhammad-ravat-1429a1258" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i> <br>LinkedIn</a>
+                <a href="mailto:moravat763@gmail.com"><i class="fa-solid fa-inbox fa-3x"></i> <br>Gmail</a>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vR3CJL-BlI1wnRYGOGXAS8ukmHvyMSM2IpYt2qHOsR8ZtlStT1rzIZgftNh93aXPA/pub" target="_blank"><i class="fa-solid fa-file fa-3x"></i> <br>Digital Resume</a>
+                <a href="resume" target="_blank"><i class="fa-regular fa-file fa-3x"></i> <br>Tech based CV </a>
+            </div>
+        </div>
+        <div class="explore">
+            Pages
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/HTML/aboutme.html">About Me</a></li>
+                <li><a href="/HTML/projects.html">Projects</a></li>
+                <li><a href="/HTML/contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="projects">
+            Projects
+            <ul>
+                <li><a href="/Projects/portfolio.html" target="_blank">Personal Portfolio</a></li>
+                <li><a href="/Projects/calc.html" target="_blank">Calculator Project</a></li>
+                <li><a href="/Projects/plane.html" target="_blank">Module Enrolment</a></li>
+                <li><a href="/Projects/password.html" target="_blank">Password Generator</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            Contact Details <br> <br>
+            Number: +44 (0)7769004379 <br>
+            Email : moravat763@gmail.com
+        </div>
+    </div>
+    <footer id="footer">
+        <label for="cursors" class="customization" id="CursorOptions">Cursors:   
+            <select name="cursor" id="cursors" class="selecT" onchange="saveSelection('cursors')">
+                <option value="default">Default Cursor</option>
+                <option value="blueSaber">BlueSaber</option>
+                <option value="redSaber">RedSaber</option>
+                <option value="electricFist">Electric Fist</option>
+                <option value="pointer">Pointer</option>
+                <option value="redHand">Red Hand</option>
+                <option value="whiteCar">White Car</option>
+                <option value="redCar">Red Car</option>
+                <option value="purpleCar">Purple Car</option>
+                <option value="gun">Gun</option>
+            </select>
+        </label><br>
+        <label for="themes" class="customization" id="ThemeOptions">Themes: 
+            <select name="theme" id="themes" class="selecT" onchange="saveSelection('themes')">
+                <option value="blueTheme">Blue Theme</option>
+                <option value="blackWhite">Black/White</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+                <option value="pink">Pink</option>
+            </select>
+        </label>
+</footer>
+<script src="/JS/logic.js"></script>
+</body>
+</html>

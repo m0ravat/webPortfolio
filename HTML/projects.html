@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Page</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/71da1e9480.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body style="visibility: hidden;" onload="load()">
+    <div  id="topnav">
+        <div class="topnav-left">
+            <a href="/index.html" class="button">
+                <span class="material-symbols-outlined">home</span>
+                <span class="icon-text">Home</span>
+            </a>
+            <a href="/HTML/aboutme.html" class="button">
+                <span class="material-symbols-outlined">person</span>
+                <span class="icon-text">About Me</span>
+            </a>
+            <a href="/HTML/projects.html" class="button"  id="active">
+                <span class="material-symbols-outlined">workspaces</span>
+                <span class="icon-text">Projects</span>
+            </a>
+            <a href="/HTML/contact.html" class="button">
+                <span class="material-symbols-outlined">contact_mail</span>
+                <span class="icon-text">Contact Me</span>
+            </a>
+            <h1 style="float: left;" id="navTitle">Projects</h1> 
+        </div>
+        <div class="topnav-right">
+            <button class="button" id="menubutton">
+                <span class="material-symbols-outlined" onclick="menuclick()">menu</span>
+                <span class="icon-text">Hide/Show Menu</span>
+            </button>       
+            <button class="button" id="darkmode" onclick="darkclick()">
+                <span class="material-symbols-outlined">contrast</span>
+                <span class="icon-text">Light/Dark Mode</span>
+            </button> 
+        </div>
+    </div>
+        <div class="box" id="topbox">
+            <div class="grid">
+                <div class="projectBox">
+                    <div class="projectImg">
+                        <img src="/Media/ProjectImg/portfolioImg.jpeg" alt="">
+                    </div>
+                    <div class="projectText">
+                        This is for my current website, which I decided to make to show off skills that I have learnt. 
+                        This is the longest project I have pursued and it has really challenged my skills. It is my hope to
+                        keep building on to this.
+                        For more information click <a href="/Projects/portfolio.html">here.</a>
+                    </div>
+                </div>
+                <div class="projectBox">
+                    <div class="projectImg">
+                        <img src="/Media/ProjectImg/javaImg.jpeg" alt="">
+                    </div>
+                    <div class="projectText">
+                        This is a project where a user can enrol in multiple modules and choose what class they want to be in. This was 
+                        inspired but not copying my original java coursework which was a plane booking system. More information can
+                        be found <a href="/Projects/plane.html">here.</a>
+                    </div>
+                </div>
+                <div class="projectBox">
+                    <div class="projectImg">
+                        <img src="/Media/ProjectImg/webImg.jpeg" alt="">
+                    </div>
+                    <div class="projectText">
+                        This is for my first main project in HTML/CSS/JS which is designing a two function calculator, the first 
+                        being a responsive arithmetic calculator and another find the outcome of a university student. For more
+                        information click <a href="/Projects/calc.html">here.</a>
+                    </div>
+                </div>
+                <div class="projectBox">
+                    <div class="projectImg">
+                        <img src="/Media/ProjectImg/pythonImg.jpeg" alt="">
+                    </div>
+                    <div class="projectText">
+                        This is a project done in python for a password generator. It generates a 12 character password, randomly choosing 
+                        from a selection of characters, numbers and letters. It combines various basic
+                        concepts to demonstrate my skills cultivated in university. For more information
+                        please click <a href="/Projects/password.html">here.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="bottomInfo">
+            <div class="socials">
+                Relevant Links
+                <div class="flex">
+                    <a href="https://github.com/m0ravat" target="_blank"><i class="fa-brands fa-github fa-3x"></i> <br> Github</a>
+                    <a href="https://www.linkedin.com/in/muhammad-ravat-1429a1258" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i> <br>LinkedIn</a>
+                    <a href="mailto:moravat763@gmail.com"><i class="fa-solid fa-inbox fa-3x"></i> <br>Gmail</a>
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vR3CJL-BlI1wnRYGOGXAS8ukmHvyMSM2IpYt2qHOsR8ZtlStT1rzIZgftNh93aXPA/pub" target="_blank"><i class="fa-solid fa-file fa-3x"></i> <br>Digital Resume</a>
+                    <a href="resume" target="_blank"><i class="fa-regular fa-file fa-3x"></i> <br>Tech based CV </a>
+                </div>
+            </div>
+            <div class="explore">
+                Pages
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/HTML/aboutme.html">About Me</a></li>
+                    <li><a href="/HTML/projects.html">Projects</a></li>
+                    <li><a href="/HTML/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="projects">
+                Projects
+                <ul>
+                    <li><a href="/Projects/portfolio.html" target="_blank">Personal Portfolio</a></li>
+                    <li><a href="/Projects/calc.html" target="_blank">Calculator Project</a></li>
+                    <li><a href="/Projects/plane.html" target="_blank">Module Enrolment</a></li>
+                    <li><a href="/Projects/password.html" target="_blank">Password Generator</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                Contact Details <br> <br>
+                Number: +44 (0)7769004379 <br>
+                Email : moravat763@gmail.com
+            </div>
+        </div>
+        <footer id="footer">
+            <label for="cursors" class="customization" id="CursorOptions">Cursors:   
+                <select name="cursor" id="cursors" class="selecT" onchange="saveSelection('cursors')">
+                    <option value="default">Default Cursor</option>
+                    <option value="blueSaber">BlueSaber</option>
+                    <option value="redSaber">RedSaber</option>
+                    <option value="electricFist">Electric Fist</option>
+                    <option value="pointer">Pointer</option>
+                    <option value="redHand">Red Hand</option>
+                    <option value="whiteCar">White Car</option>
+                    <option value="redCar">Red Car</option>
+                    <option value="purpleCar">Purple Car</option>
+                    <option value="gun">Gun</option>
+                </select>
+            </label><br>
+            <label for="themes" class="customization" id="ThemeOptions">Themes: 
+                <select name="theme" id="themes" class="selecT" onchange="saveSelection('themes')">
+                    <option value="blueTheme">Blue Theme</option>
+                    <option value="blackWhite">Black/White</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                </select>
+            </label>
+    </footer>
+    <script src="/JS/logic.js"></script>
+</body>
+</html>

@@ -418,6 +418,7 @@ body.main{
   }
   fieldset{
     max-width: 80%;
+    margin-left: 50px;
     margin-bottom: 50px;
     width: 500px;
     max-height: 800px;
@@ -467,7 +468,7 @@ body.main{
     display: grid;
     column-gap: 30px;
     row-gap: 10px;
-    grid-template: max-content  / max-content max-content max-content max-content;
+    grid-template: max-content  / max-content max-content max-content max-content max-content;
   }
   @media screen and (min-width:1031px ) and (max-width:1380px) {
     .grid{

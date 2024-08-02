@@ -96,6 +96,8 @@ export function loadAbout() {
             <p>
                 Hi. I am an aspiring backend engineer currently working on my frontend skills. To showcase this I have made a resume purely
                 from HTML & CSS (only available on landscape or wide resolution) and a slideshow for you mobile users. 
+                Note: The Resume is a very old version which I recreated to improve on my CSS skills, to see my latest one refer to the 
+                bottom of the page.
             </p>
         </div>
         <div class="box" id="c">
@@ -359,7 +361,7 @@ export function loadProject(){
                         This is for my current website, which I decided to make to show off skills that I have learnt. 
                         This is the longest project I have pursued and it has really challenged my skills. It is my hope to
                         keep building on to this.
-                        For more information click <a href="/Projects/portfolio.html">here.</a>
+                        For more information click <a href="#portProj" class="black">here.</a>
                     </div>
                 </div>
                 <div class="projectBox">
@@ -369,7 +371,7 @@ export function loadProject(){
                     <div class="projectText">
                         This is a project where a user can enrol in multiple modules and choose what class they want to be in. This was 
                         inspired but not copying my original java coursework which was a plane booking system. More information can
-                        be found <a href="/Projects/plane.html">here.</a>
+                        be found <a href="#moduleProj" class="black">here.</a>
                     </div>
                 </div>
                 <div class="projectBox">
@@ -379,7 +381,7 @@ export function loadProject(){
                     <div class="projectText">
                         This is for my first main project in HTML/CSS/JS which is designing a two function calculator, the first 
                         being a responsive arithmetic calculator and another find the outcome of a university student. For more
-                        information click <a href="/Projects/calc.html">here.</a>
+                        information click <a href="#calculatorProj" class="black">here.</a>
                     </div>
                 </div>
                 <div class="projectBox">
@@ -390,7 +392,7 @@ export function loadProject(){
                         This is a project done in python for a password generator. It generates a 12 character password, randomly choosing 
                         from a selection of characters, numbers and letters. It combines various basic
                         concepts to demonstrate my skills cultivated in university. For more information
-                        please click <a href="/Projects/password.html">here.</a>
+                        please click <a href="#passProj" class="black">here.</a>
                     </div>
                 </div>
             </div>

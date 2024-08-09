@@ -10,7 +10,7 @@ import {animateEffect, scrollToTop} from "./load.js";
 import { loadHome, loadAbout, loadProject, loadContact } from "./load.js";
 import { menuclick, darkclick, changeColour } from "./navbar.js";
 import { cursorChange, themeDark, themeLight } from "./footer.js";
-import { loadCalc, loadModule, loadPass, loadPort } from "./loadProjects.js";
+import { loadCalc, loadModule, loadPass, loadPort, loadToDO } from "./loadProjects.js";
 
 
 
@@ -18,6 +18,8 @@ document.getElementById('portProj').addEventListener('click', loadPort);
 document.getElementById('calculatorProj').addEventListener('click', loadCalc);
 document.getElementById('moduleProj').addEventListener('click', loadModule);
 document.getElementById('passProj').addEventListener('click', loadPass);
+document.getElementById('todoProj').addEventListener('click', loadToDO);
+
 
 // Save the selected value to local storage
 function saveSelection(id) {

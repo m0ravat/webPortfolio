@@ -17,7 +17,80 @@ export function switchCSS() {
     document.getElementById("bottomNav").style.visibility="visible"
 }
 
-
+export function loadToDO(){
+    scrollToTop();
+    switchCSS();
+    document.getElementById("content").innerHTML=`
+    <div class = "padding"><h1 class="title">MyNotesToDo App</h1>
+    <div class="container">
+        <div class="tags">JavaScript</div>
+        <div class="tags">VS Code</div>
+        <div class="tags">OOP</div>
+        <div class="tags">Data Management</div>
+    </div>
+    <div class="container wrap">
+        <div class="firstImg">
+            <img src="./Media/ProjectsImg/notes.png" alt="Image of password" id="pass">
+        </div>
+        <div class="contents">
+            <h2>Table of Contents</h2> <br>
+            - <a href="https://github.com/m0ravat/ToDoListApp" target="_blank">GitHub</a> <br>
+            - <a href="#stack">Stack</a> <br>
+            - <a href="#intro">Introduction</a> <br>
+            - <a href="#skills">Skills developed</a> <br>
+            - <a href="#reflection">Reflection</a> <br>
+        </div>
+    </div>
+    <h1>Stack </h1>
+    <div class="container wrap width" id="stack">
+        <div class="resource">
+            <img src="./Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+            <p class="small hidden">GitHub</p>
+        </div>
+        <div class="resource">
+            <img src="./Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="">
+            <p class="small hidden">VS Code</p>
+        </div>
+        <div class="resource">
+            <img src="./Media/StackImgg/javascript-155-svgrepo-com.svg" alt="">
+            <p class="small hidden">JavaScript</p>
+        </div>
+        <div class="resource">
+            <img src="./Media/StackImgg/vercel-svgrepo-com.svg" alt="">
+            <p class="small hidden">Vercel</p>
+        </div>
+    </div>
+    <div class="container wrap width" id="intro">
+        <h1 class="title">Introduction</h1>
+        <p>
+            This was a project from the web course The Odin Project with the purpose of creating a to do list app. It started by showing 
+            me examples like todoist, but upon making an account just to check I would end up getting tedious emails, so I decided 
+            to make mine a practical large scale application which can be of worth. It is designed for those who want to store notes/tasks
+            in a simple and easy manner, however is only best for the short term right now as there is no database to store the data. 
+            The code is heavily javascript focused, with the use of two classes and 3 .js files for readability. It helped me learn about basic 
+            data principles, like storing the data inputted, then loading it when needed and deleting it. 
+        </p>
+    </div>
+    <div class="container wrap width" id="skills">
+        <h1 class="title">Skills developed</h1>
+        <p>
+            Object Oriented Programming <br>
+            Data Handling <br>
+            UI Design <br>
+            Use of local storage <br>
+        </p>
+    </div>
+    <div class="container wrap width" id="reflection">
+        <h1 class="title">Reflection</h1>
+        <p>
+            To conclude, I can say this was a trasnformative project, it forced me to use everything I used before, while adding onto
+            the logic. It has given me better insight into how organisations handle data from the user, and in the future I plan on 
+            making it long term feasible by storing users information and tasks in a database, or storing and importing it from a file.  
+        </p>
+    </div>
+    </div>
+    `;
+}
 
 export function loadPass(){
     scrollToTop();
@@ -31,7 +104,7 @@ export function loadPass(){
     </div>
     <div class="container wrap">
         <div class="firstImg">
-            <img src="/Media/ProjectsImg/password.png" alt="Image of password" id="pass">
+            <img src="./Media/ProjectsImg/password.png" alt="Image of password" id="pass">
         </div>
         <div class="contents">
             <h2>Table of Contents</h2> <br>
@@ -45,15 +118,15 @@ export function loadPass(){
     <h1>Stack </h1>
     <div class="container wrap width" id="stack">
         <div class="resource">
-            <img src="/Media/StackImgg/python-svgrepo-com.svg" alt="">
+            <img src="./Media/StackImgg/python-svgrepo-com.svg" alt="">
             <p class="small hidden">Python</p>
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="">
+            <img src="./Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="">
             <p class="small hidden">VS Code</p>
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+            <img src="./Media/StackImgg/github-142-svgrepo-com.svg" alt="">
             <p class="small hidden">GitHub</p>
         </div>
     </div>
@@ -100,7 +173,7 @@ export function loadCalc(){
         </div>
         <div class="container wrap">
             <div class="firstImg">
-                <img src="/Media/ProjectsImg/calc.png" alt="Image of Calculator UI" id="calc">
+                <img src="./Media/ProjectsImg/calc.png" alt="Image of Calculator UI" id="calc">
             </div>
             <div class="contents">
                 <h2>Table of Contents</h2> <br>
@@ -115,23 +188,23 @@ export function loadCalc(){
         <h1>Stack </h1>
         <div class="container wrap width" id="stack">
             <div class="resource">
-                <img src="/Media/StackImgg/html5-01-svgrepo-com.svg" alt="" id="vercel">
+                <img src="./Media/StackImgg/html5-01-svgrepo-com.svg" alt="" id="vercel">
             </div>
             <div class="resource">
-                <img src="/Media/StackImgg/css3-01-svgrepo-com.svg" id="vercel" alt="">
+                <img src="./Media/StackImgg/css3-01-svgrepo-com.svg" id="vercel" alt="">
             </div>
             <div class="resource">
-                <img src="/Media/StackImgg/javascript-155-svgrepo-com.svg" id="vercel" alt="">
+                <img src="./Media/StackImgg/javascript-155-svgrepo-com.svg" id="vercel" alt="">
             </div>
             <div class="resource">
-                <img src="/Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="" >
+                <img src="./Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="" >
                 <p class="small hidden">VS Code</p>
             </div>
             <div class="resource">
-                <img src="/Media/StackImgg/vercel-svgrepo-com.svg" alt="" id="vercel">
+                <img src="./Media/StackImgg/vercel-svgrepo-com.svg" alt="" id="vercel">
             </div>
             <div class="resource">
-                <img src="/Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+                <img src="./Media/StackImgg/github-142-svgrepo-com.svg" alt="">
                 <p class="small hidden">GitHub</p>
             </div>
         </div>
@@ -178,7 +251,7 @@ export function loadModule(){
     </div>
     <div class="container wrap">
         <div class="firstImg">
-            <img src="/Media/ProjectsImg/enrol.png" alt="" id="enrol">
+            <img src="./Media/ProjectsImg/enrol.png" alt="" id="enrol">
         </div>
         <div class="contents">
             <h2>Table of Contents</h2> <br>
@@ -192,15 +265,15 @@ export function loadModule(){
     <h1>Stack </h1>
     <div class="container wrap width" id="stack">
         <div class="resource">
-            <img src="/Media/StackImgg/intellij-idea-svgrepo-com.svg" alt="">
+            <img src="./Media/StackImgg/intellij-idea-svgrepo-com.svg" alt="">
             <p class="small hidden">IntelliJ</p>
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/Javaa.png" alt="">
+            <img src="./Media/StackImgg/Javaa.png" alt="">
             <p class="small hidden">Java</p>
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+            <img src="./Media/StackImgg/github-142-svgrepo-com.svg" alt="">
             <p class="small hidden">GitHub</p>
         </div>
     </div>
@@ -243,7 +316,7 @@ export function loadPort(){
     </div>
     <div class="container wrap">
         <div class="firstImg">
-            <img src="/Media/ProjectsImg/port.png" alt="Image of Home page" id="port">
+            <img src="./Media/ProjectsImg/port.png" alt="Image of Home page" id="port">
         </div>
         <div class="contents">
             <h2>Table of Contents</h2> <br>
@@ -258,23 +331,23 @@ export function loadPort(){
     <h1>Stack </h1>
     <div class="container wrap width" id="stack">
         <div class="resource">
-            <img src="/Media/StackImgg/html5-01-svgrepo-com.svg" alt="" id="vercel">
+            <img src="./Media/StackImgg/html5-01-svgrepo-com.svg" alt="" id="vercel">
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/css3-01-svgrepo-com.svg" id="vercel" alt="">
+            <img src="./Media/StackImgg/css3-01-svgrepo-com.svg" id="vercel" alt="">
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/javascript-155-svgrepo-com.svg" id="vercel" alt="">
+            <img src="./Media/StackImgg/javascript-155-svgrepo-com.svg" id="vercel" alt="">
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="" >
+            <img src="./Media/StackImgg/visual-studio-code-svgrepo-com.svg" alt="" >
             <p class="small hidden">VS Code</p>
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/vercel-svgrepo-com.svg" alt="" id="vercel">
+            <img src="./Media/StackImgg/vercel-svgrepo-com.svg" alt="" id="vercel">
         </div>
         <div class="resource">
-            <img src="/Media/StackImgg/github-142-svgrepo-com.svg" alt="">
+            <img src="./Media/StackImgg/github-142-svgrepo-com.svg" alt="">
             <p class="small hidden">GitHub</p>
         </div>
     </div>

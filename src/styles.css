@@ -468,7 +468,7 @@ body.main{
     display: grid;
     column-gap: 30px;
     row-gap: 10px;
-    grid-template: max-content  / max-content max-content max-content max-content max-content;
+    grid-template: max-content  / max-content max-content max-content max-content;
   }
   @media screen and (min-width:1031px ) and (max-width:1380px) {
     .grid{
@@ -544,6 +544,7 @@ body.main{
     span:hover{
       color: white;
       text-decoration: underline;
+      cursor: pointer;
     }
     li{
       list-style-type: square;

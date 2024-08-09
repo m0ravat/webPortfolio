@@ -66,7 +66,7 @@ export function loadHome(){
             This is my website designed to showcase my skills. You can use the navigation bar or use the footer below which 
             has every link you would need, along with my contact info. If you encounter any issues please let me know!
         </div>
-        <img src="/Media/indexImg/project.jpg" alt="" class="boximg" id="img1">
+        <img src="./Media/indexImg/project.jpg" alt="" class="boximg" id="img1">
     </div>
     <div class="box" id="cc">
         <div class="text">
@@ -75,7 +75,7 @@ export function loadHome(){
             specialising in backend development. If you would like to 
             see my CV or learn more about me, click the "About Me" button on the navbar or go to the bottom.
         </div>
-        <img src="/Media/indexImg/about-me-icon.png" alt="UserIcon" class="boximg" id="img2">
+        <img src="./Media/indexImg/about-me-icon.png" alt="UserIcon" class="boximg" id="img2">
     </div>
     <div class="box" id="projects">
         <div class="text">
@@ -85,7 +85,7 @@ export function loadHome(){
              <a href="https://github.com/m0ravat" target="blank_">GitHub.</a> Otherwise, for a detailed documentation feel free to click on the
             "Projects" button on the navbar or go to the bottom of the page.
         </div>
-        <img src="/Media/indexImg/code.jpg" alt="" class="boximg" id="img3">
+        <img src="./Media/indexImg/code.jpg" alt="" class="boximg" id="img3">
     </div>
     `;
 }
@@ -163,7 +163,7 @@ export function loadAbout() {
             </div>
             <div class="resume">
                 <div class="leftCV">
-                    <img src="/Media/AboutMeImg/CVimg.jpeg" alt="" class="imgCV">
+                    <img src="./Media/AboutMeImg/CVimg.jpeg" alt="" class="imgCV">
                     <div class="bioCV">
                         <span class="material-symbols-outlined padd">person</span>
                         Muhammad Ravat <br> <br>
@@ -355,7 +355,17 @@ export function loadProject(){
             <div class="grid">
                 <div class="projectBox">
                     <div class="projectImg">
-                        <img src="/Media/ProjectImg/portfolioImg.jpeg" alt="">
+                        <img src="./Media/ProjectImg/logo.png" alt="">
+                    </div>
+                    <div class="projectText">
+                        This is for a to do list app, which I designed to consolidate my javascript skills in an OOP environment, 
+                        while also learning about storing data and making an easy no hassle app to store notes/tasks.
+                        For more information click <a href="#todoProj" class="black">here.</a>
+                    </div>
+                </div>
+                <div class="projectBox">
+                    <div class="projectImg">
+                        <img src="./Media/ProjectImg/portfolioImg.jpeg" alt="">
                     </div>
                     <div class="projectText">
                         This is for my current website, which I decided to make to show off skills that I have learnt. 
@@ -366,7 +376,7 @@ export function loadProject(){
                 </div>
                 <div class="projectBox">
                     <div class="projectImg">
-                        <img src="/Media/ProjectImg/javaImg.jpeg" alt="">
+                        <img src="./Media/ProjectImg/javaImg.jpeg" alt="">
                     </div>
                     <div class="projectText">
                         This is a project where a user can enrol in multiple modules and choose what class they want to be in. This was 
@@ -376,7 +386,7 @@ export function loadProject(){
                 </div>
                 <div class="projectBox">
                     <div class="projectImg">
-                        <img src="/Media/ProjectImg/webImg.jpeg" alt="">
+                        <img src="./Media/ProjectImg/webImg.jpeg" alt="">
                     </div>
                     <div class="projectText">
                         This is for my first main project in HTML/CSS/JS which is designing a two function calculator, the first 
@@ -386,7 +396,7 @@ export function loadProject(){
                 </div>
                 <div class="projectBox">
                     <div class="projectImg">
-                        <img src="/Media/ProjectImg/pythonImg.jpeg" alt="">
+                        <img src="./Media/ProjectImg/pythonImg.jpeg" alt="">
                     </div>
                     <div class="projectText">
                         This is a project done in python for a password generator. It generates a 12 character password, randomly choosing 
